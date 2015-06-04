@@ -1,0 +1,42 @@
+#actitud{
+	background-color: #EAEEEF;
+	padding-top: 1%;
+}
+
+#datos{
+	margin-top: 5%;
+}
+
+#skills{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+#aptitud{
+	text-align:justify;
+}
+
+#cv{
+	text-align:center;
+	margin-top: 15%;
+	margin-bottom: 5%;
+}
+
+.circular{
+	width: 200px;
+	height: 200px;
+	background-image: url('../images/foto_peq2.png');
+	background-size: cover;
+	display: block;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+#cartaPresentacion{
+	text-align: justify;
+}
+
+i{
+	color:#286090;
+}
