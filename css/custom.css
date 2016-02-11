@@ -1,28 +1,54 @@
-#actitud{
+body {
+	text-align: justify;
+}
+
+.center {
+	text-align: center;
+}
+
+body h4 {
+	margin-top: 3%;
+}
+
+.foto {
+	float: left;
+	height: 160;
+	width: 160;
+	margin-right: 2%;
+}
+
+#datos0 {
+	margin-bottom: 5%;
+}
+
+#actitud {
 	background-color: #EAEEEF;
 	padding-top: 1%;
 }
 
-#datos{
+#datos {
 	margin-top: 5%;
 }
 
-#skills{
+
+#certificaciones img {
+	height: 60px;
+	width: 60px;
+}
+
+#skills {
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
 
-#aptitud{
-	text-align:justify;
-}
 
-#cv{
+.enlace-fin {
 	text-align:center;
-	margin-top: 15%;
-	margin-bottom: 5%;
+	margin-top: 9%;
+	margin-bottom: 2%;
 }
 
-.circular{
+.circular {
 	width: 200px;
 	height: 200px;
 	background-image: url('../images/foto_peq2.png');
@@ -31,12 +57,9 @@
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
+	margin-left: 28%;
 }
 
-#cartaPresentacion{
-	text-align: justify;
-}
-
-i{
+i {
 	color:#286090;
 }
