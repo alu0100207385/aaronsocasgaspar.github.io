@@ -31,9 +31,17 @@ body h4 {
 }
 
 
-#certificaciones img {
+#certificaciones a img {
 	height: 60px;
 	width: 60px;
+}
+
+.entity {
+	cursor: pointer;
+}
+
+.entity img {
+	height: 35px;
 }
 
 #skills {
