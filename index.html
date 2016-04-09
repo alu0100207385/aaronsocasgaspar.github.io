@@ -114,12 +114,12 @@
 
 		<h4><i class="fa fa-certificate"> <strong>CERTIFICACIONES</strong></i></h4>
 
-		<div class="row entity" id="codeschool" title="Pulsa para ver certificados Code School">
+		<div class="row entity" id="codeschool">
 			<div class="col-md-3">
-				<img src="images/codeschool.png" alt="CodeSchool certificates">
+				<img src="images/codeschool.png" alt="CodeSchool certificates" title="Pulsa para ver certificados Code School"/>
 			</div>
 			<div class="col-md-9">
-				<p><a href="https://www.codeschool.com/">Code School</a> es un portal online dirigido a desarrollaodres que enseña a través de contenidos de entretenimiento. Con más de 50 cursos (Ruby, JavaScript, HTML/CSS, iOS, Git, bases de datos, etc.) Code School junta experimentados instructores con un contenido atractivo y de alta calidad inspirado para su comunidad. Más de 1 millón de personas en todo el mundo visita Code School para mejorar sus habilidades de desarrollo y aprender sobre la marcha.</p>
+				<p><span onclick="myFunction()">Code School</a> es un portal online dirigido a desarrollaodres que enseña a través de contenidos de entretenimiento. Con más de 50 cursos (Ruby, JavaScript, HTML/CSS, iOS, Git, bases de datos, etc.) Code School junta experimentados instructores con un contenido atractivo y de alta calidad inspirado para su comunidad. Más de 1 millón de personas en todo el mundo visita Code School para mejorar sus habilidades de desarrollo y aprender sobre la marcha.</p>
 			</div>
 		</div>
 
@@ -198,7 +198,7 @@
 				<img src="images/iter-logo.png" alt="ITER certificates">
 			</div>
 			<div class="col-md-9">
-				<p>En la actualidad, el <a href="http://www.iter.es/">ITER</a> es un centro de investigación de referencia internacional en energías renovables, ingeniería, telecomunicaciones y medio ambiente.</p>
+				<p>En la actualidad, el ITER es un centro de investigación de referencia internacional en energías renovables, ingeniería, telecomunicaciones y medio ambiente.</p>
 			</div>
 		</div>
 
@@ -372,8 +372,7 @@
 			$('#certificaciones-codeschool').toggle(500);
 		});
 		$('#iter').click(function(e){
-			//window.open("docs/certificadoITER.pdf", "_blank");
-			e.preventDefault();
+			//e.preventDefault();
 			window.location.href = 'docs/certificadoITER.pdf';
 
 		});
