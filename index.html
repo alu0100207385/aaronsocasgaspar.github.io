@@ -110,7 +110,8 @@
 		</div>
 	</div>
 
-    <div id="certificaciones" class="no-print">
+  <div id="certificaciones" class="no-print">
+
 		<h4><i class="fa fa-certificate"> <strong>CERTIFICACIONES</strong></i></h4>
 
 		<div class="row entity" id="codeschool" title="Pulsa para ver certificados Code School">
@@ -190,6 +191,17 @@
 			</div>
 		</div>
 
+		<hr/>
+
+		<div class="row entity" id="iter" title="Pulsa para ver certificado del Instituo Tecnológico de Energías Renovables (ITER)">
+			<div class="col-md-3">
+				<img src="images/iter-logo.png" alt="ITER certificates">
+			</div>
+			<div class="col-md-9">
+				<p>En la actualidad, el <a href="http://www.iter.es/">ITER</a> es un centro de investigación de referencia internacional en energías renovables, ingeniería, telecomunicaciones y medio ambiente.</p>
+			</div>
+		</div>
+
 		<div class="no-print">
 			<h4><i class="fa fa-folder-open"> <strong>PORTAFOLIO</strong></i></h4>
 			<div class="col-md-3"><br>11/02/2016*<br>*Última actualización</div>
@@ -198,6 +210,7 @@
 				<p>Aquí podrás encontrar algunos de mis proyectos, prácticas y trabajos en los que he colaborado.</p>
 			</div>
 		</div>
+
 	</div>
 
 	<div id="cv" class="enlace-fin">
@@ -300,6 +313,7 @@
 			<div id="otros-conocimientos">
 				<h4>OTROS CONOCIMIENTOS</h4>
 				<ul>
+					<li>Android</li>
 					<li>Desarrollo colaborativo: Github y Bitbucket</li>
 					<li>Métodos de pruebas: TDD e integración continua</li>
 					<li>Herramientas de pruebas: Selenium, Coveralls</li>
@@ -356,6 +370,12 @@
 		$('#actitud').height($(document).height());
 		$('#codeschool').click(function(){
 			$('#certificaciones-codeschool').toggle(500);
+		});
+		$('#iter').click(function(e){
+			//window.open("docs/certificadoITER.pdf", "_blank");
+			e.preventDefault();
+			window.location.href = 'docs/certificadoITER.pdf';
+
 		});
 	});
 
