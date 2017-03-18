@@ -11,12 +11,25 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/print.js"></script>
 	<script type="text/javascript" src="js/lang.en.js"></script>
+	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
 
 <body id="curriculum">
 
+<nav id="topBar" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<ul class="nav navbar-nav navbar-right">
+    		<li id="translateToSpanish">ESP</li>
+    		<li id="translateToEnglish">ENG</li>
+    	</ul>
+    </div>
+  </div>
+</nav>
+
 <div id="aptitud" class="col-md-8">
 	<h2>Aarón Socas Gaspar</h2>
+	<div class="clearfix"></div>
 	<div class="col-md-12">
 		<div class="row-fluid" id="datos0" hidden>
 			<div>
@@ -235,7 +248,7 @@
 		</div>
 
 		<div id="skills">
-			<h4><strong>HABILIDADES PROFESIONALES</strong></h4>
+			<h4><strong id="proffesionalSkills"></strong></h4>
 			HTML
 			<div class="progress">
   				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
@@ -302,27 +315,31 @@
 			</div>
 
 			<hr>
-			<h4>IDIOMAS</h4>
-			Inglés
+			<h4 id="languages"></h4>
+			<span id="english"></span>
 			<div class="progress">
-  				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+  				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    				<span class="sr-only"></span>
+  				</div>
+			</div>
+			<span id="spanish"></span>
+			<div class="progress">
+  				<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
     				<span class="sr-only"></span>
   				</div>
 			</div>
 			<hr>
 			<div id="otros-conocimientos">
-				<h4>OTROS CONOCIMIENTOS</h4>
+				<h4 id="otherKnowledge"></h4>
 				<ul>
-					<li>Desarrollo colaborativo: Github y Bitbucket</li>
-					<li>Métodos de pruebas: TDD e integración continua</li>
-					<li>Herramientas de pruebas: Selenium, Coveralls</li>
-					<li>Gestión de proyectos: PivotalTracker, OpenProject</li>
-					<li>Metodologías ágiles (Scrum)</li>
-					<li>Clouds: PaaS (Heroku, OpenShift)</li>
-					<li>SQL</li>
-					<li>Office y LibreOffice</li>
-					<li>SO Linux y Windows</li>
-					<li>C++</li>
+					<li id="repositoryDevelopment"></li>
+					<li id="testMethods"></li>
+					<li id="testTools"></li>
+					<li id="manageTools"></li>
+					<li id="agileMthodology"></li>
+					<li id="clouds"></li>
+					<li id="database"></li>
+					<li id="os"></li>
 				</ul>
 			</div>
 		</div>
@@ -364,20 +381,85 @@
 </body>
 
 <script type="text/javascript">
-	// Set language
-	$('#rol').text(lang["rol"]);
-	$('#resume1').text(lang["resume1"]);
-	$('#resume2').text(lang["resume2"]);
-	$('#location').text(lang["location"]);
-	$('#email').text(lang["email"]);
-	$('#linkedin').text(lang["linkedin"]);
-	$('#github').text(lang["github"]);
-	$('#car').text(lang["car"]);
-	$('#coverLetterTitle').text(lang["coverLetterTitle"]);
+	// Set default language
+	$('#rol').text(langEn["rol"]);
+	$('#resume1').text(langEn["resume1"]);
+	$('#resume2').text(langEn["resume2"]);
+	$('#location').text(langEn["location"]);
+	$('#email').text(langEn["email"]);
+	$('#linkedin').text(langEn["linkedin"]);
+	$('#github').text(langEn["github"]);
+	$('#car').text(langEn["car"]);
+	$('#proffesionalSkills').text(langEn["proffesionalSkills"]);
+	$('#languages').text(langEn["languages"]);
+	$('#english').text(langEn["english"]);
+	$('#spanish').text(langEn["spanish"]);
+	$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+	$('#otherKnowledge').text(langEn["otherKnowledge"]);
+	$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
+	$('#testMethods').text(langEn["testMethods"]);
+	$('#testTools').text(langEn["testTools"]);
+	$('#manageTools').text(langEn["manageTools"]);
+	$('#agileMthodology').text(langEn["agileMthodology"]);
+	$('#clouds').text(langEn["clouds"]);
+	$('#database').text(langEn["database"]);
+	$('#os').text(langEn["os"]);
+
 
 	$('#certificaciones-codeschool').hide();
 	$(document).ready(function() {
-		$('#actitud').height($(document).height());
+
+	$('#translateToSpanish').click(function(){
+	    $('#rol').text(langEs["rol"]);
+			$('#resume1').text(langEs["resume1"]);
+			$('#resume2').text(langEs["resume2"]);
+			$('#location').text(langEs["location"]);
+			$('#email').text(langEs["email"]);
+			$('#linkedin').text(langEs["linkedin"]);
+			$('#github').text(langEs["github"]);
+			$('#car').text(langEs["car"]);
+			$('#proffesionalSkills').text(langEs["proffesionalSkills"]);
+			$('#languages').text(langEs["languages"]);
+			$('#english').text(langEs["english"]);
+			$('#spanish').text(langEs["spanish"]);
+			$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
+			$('#otherKnowledge').text(langEs["otherKnowledge"]);
+			$('#repositoryDevelopment').text(langEs["repositoryDevelopment"]);
+			$('#testMethods').text(langEs["testMethods"]);
+			$('#testTools').text(langEs["testTools"]);
+			$('#manageTools').text(langEs["manageTools"]);
+			$('#agileMthodology').text(langEs["agileMthodology"]);
+			$('#clouds').text(langEs["clouds"]);
+			$('#database').text(langEs["database"]);
+			$('#os').text(langEs["os"]);
+	});
+
+	$('#translateToEnglish').click(function(){
+    $('#rol').text(langEn["rol"]);
+		$('#resume1').text(langEn["resume1"]);
+		$('#resume2').text(langEn["resume2"]);
+		$('#location').text(langEn["location"]);
+		$('#email').text(langEn["email"]);
+		$('#linkedin').text(langEn["linkedin"]);
+		$('#github').text(langEn["github"]);
+		$('#car').text(langEn["car"]);
+		$('#proffesionalSkills').text(langEn["proffesionalSkills"]);
+		$('#languages').text(langEn["languages"]);
+		$('#english').text(langEn["english"]);
+		$('#spanish').text(langEn["spanish"]);
+		$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+		$('#otherKnowledge').text(langEn["otherKnowledge"]);
+		$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
+		$('#testMethods').text(langEn["testMethods"]);
+		$('#testTools').text(langEn["testTools"]);
+		$('#manageTools').text(langEn["manageTools"]);
+		$('#agileMthodology').text(langEn["agileMthodology"]);
+		$('#clouds').text(langEn["clouds"]);
+		$('#database').text(langEn["database"]);
+		$('#os').text(langEn["os"]);
+	});
+
+		//$('#actitud').height($(document).height());
 		$('#codeschool').click(function(){
 			$('#certificaciones-codeschool').toggle(500);
 		});
