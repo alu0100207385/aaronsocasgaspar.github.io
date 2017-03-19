@@ -87,17 +87,32 @@ langEs = {
   "portfolioLastUpdate" : "*Última actualización",
   "portfolioView" : "Ver portafolio",
   "portfolioDetails" : "Aquí podrás encontrar algunos de mis proyectos, prácticas y trabajos en los que he colaborado.",
-  "getCv" : "Obtener CV"
+  "getCv" : "Obtener CV",
+  "myEmail" : "socasgaspar@gmail.com",
+  "myLinkedin" : "https://www.linkedin.com/in/aaronsocasgaspar/",
+  "myGithub" : "https://github.com/alu0100207385",
+  "certificationsDetailsPrint" : "Visita http://alu0100207385.github.io/ para más detalles."
 };
 
 $(document).ready(function() {
 
   $('#translateToSpanish').click(function(){
+    //Nav top bar
     $('#dropdownNav').text(langEs["dropdownNav"]);
     $('#professionalExperienceNav').text(langEs["professionalExperienceNav"]);
     $('#educationNav').text(langEs["educationNav"]);
     $('#certificationsNav').text(langEs["certificationsNav"]);
     $('#portfolioNav').text(langEs["portfolioNav"]);
+    //For print
+    $('#locationPrint').text(langEs["location"]);
+    $('#emailPrint').text(langEs["myEmail"]);
+    $('#linkedinPrint').text(langEs["myLinkedin"]);
+    $('#githubPrint').text(langEs["myGithub"]);
+    $('#carPrint').text(langEs["car"]);
+    $('#languagesPrint').text(langEs["languages"]);
+    $('#certificationsPrint').text(langEs["certifications"]);
+    $('#certificationsDetailsPrint').text(langEs["certificationsDetailsPrint"]);
+
     $('#professionalExperience').text(langEs["professionalExperience"]);
     $('#education').text(langEs["education"]);
     $('#certifications').text(langEs["certifications"]);

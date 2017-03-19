@@ -83,8 +83,11 @@ langEn = {
   "portfolioLastUpdate" : "*Last update",
   "portfolioView" : "See portfolio",
   "portfolioDetails" : "Here you can find some of my projects, practices and works in which I have collaborated.",
-  "getCv" : "Get CV"
-
+  "getCv" : "Get CV",
+  "myEmail" : "socasgaspar@gmail.com",
+  "myLinkedin" : "https://www.linkedin.com/in/aaronsocasgaspar/",
+  "myGithub" : "https://github.com/alu0100207385",
+  "certificationsDetailsPrint" : "Visit http://alu0100207385.github.io/ for more details."
 };
 
 
@@ -95,11 +98,22 @@ $(document).ready(function() {
 });
 
 function translateToEnglish(){
+  //Top navbar
   $('#dropdownNav').text(langEn["dropdownNav"]);
   $('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
   $('#educationNav').text(langEn["educationNav"]);
   $('#certificationsNav').text(langEn["certificationsNav"]);
   $('#portfolioNav').text(langEn["portfolioNav"]);
+  //For print
+  $('#locationPrint').text(langEn["location"]);
+  $('#emailPrint').text(langEn["myEmail"]);
+  $('#linkedinPrint').text(langEn["myLinkedin"]);
+  $('#githubPrint').text(langEn["myGithub"]);
+  $('#carPrint').text(langEn["car"]);
+  $('#languagesPrint').text(langEn["languages"]);
+  $('#certificationsPrint').text(langEn["certifications"]);
+  $('#certificationsDetailsPrint').text(langEn["certificationsDetailsPrint"]);
+
   $('#professionalExperience').text(langEn["professionalExperience"]);
   $('#education').text(langEn["education"]);
   $('#certifications').text(langEn["certifications"]);
@@ -117,7 +131,7 @@ function translateToEnglish(){
   $('#integraTasks').html(langEn["integraTasks"]);
   $('#laLagunaTime').text(langEn["laLagunaTime"]);
   $('#laLagunaRol').text(langEn["laLagunaRol"]);
-  $('#laLagunaCompany').text(langEs["laLagunaCompany"]);
+  $('#laLagunaCompany').text(langEn["laLagunaCompany"]);
   $('#laLagunaTasks').html(langEn["laLagunaTasks"]);
   $('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
   $('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
