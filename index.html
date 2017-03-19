@@ -16,14 +16,27 @@
 
 <body id="curriculum">
 
+<!-- TOP BAR -->
 <nav id="topBar" class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-    	<ul class="nav navbar-nav navbar-right">
-    		<li id="translateToSpanish">ESP</li>
-    		<li id="translateToEnglish">ENG</li>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<ul class="nav navbar-nav">
+      	<li id="linkEng" class="active"><a id="translateToEnglish" href="#">ENG<span class="sr-only"></span></a></li>
+      	<li id="linkEsp"><a id="translateToSpanish" href="#">ESP</a></li>
+      	<li class="dropdown"><a id="dropdownNav" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+	        <ul class="dropdown-menu">
+	          <li><a id="professionalExperienceNav" href="#professionalExperience"></a></li>
+	          <li><a id="educationNav" href="#education"></a></li>
+	          <li><a id="certificationsNav" href="#certifications"></a></li>
+	          <li><a id="portfolioNav" href="#portfolio"></a></li>
+	        </ul>
+      	</li>
     	</ul>
-    </div>
+	  	<!--<ul class="nav navbar-nav navbar-right">
+	  		<li id="translateToSpanish">ESP</li>
+	  		<li id="translateToEnglish">ENG</li>
+	  	</ul>-->
+  	</div>
   </div>
 </nav>
 
@@ -76,7 +89,7 @@
 	</div>
 
 	<div id="experiencia-profesional">
-		<h4><i class="fa fa-briefcase"> <strong>EXPERIENCIA PROFESIONAL</strong></i></h4>
+		<h4><i class="fa fa-briefcase"> <strong id="professionalExperience"></strong></i></h4>
 		<div class="col-md-3"><br>25/09/2015 - Actualmente</div>
 		<div class="col-md-9">
 			<h4>Investigación y Desarrollo(I+D+i)</h4>
@@ -107,7 +120,7 @@
 	</div>
 
 	<div id="educacion">
-		<h4><i class="fa fa-graduation-cap"> <strong>EDUCACIÓN</strong></i></h4>
+		<h4><i class="fa fa-graduation-cap"> <strong id="education"></strong></i></h4>
 		<div class="col-md-3"><br>10/09/2012 - 22/09/2015</div>
 		<div class="col-md-9">
 			<h4>Grado en Ingeniería Informática</h4>
@@ -125,7 +138,7 @@
 
   <div id="certificaciones" class="no-print">
 
-		<h4><i class="fa fa-certificate"> <strong>CERTIFICACIONES</strong></i></h4>
+		<h4><i class="fa fa-certificate"> <strong id="certifications"></strong></i></h4>
 
 		<div class="row entity" id="codeschool">
 			<div class="col-md-3">
@@ -216,7 +229,7 @@
 		</div>
 
 		<div class="no-print">
-			<h4><i class="fa fa-folder-open"> <strong>PORTAFOLIO</strong></i></h4>
+			<h4><i class="fa fa-folder-open"> <strong id="portfolio"></strong></i></h4>
 			<div class="col-md-3"><br>11/02/2016*<br>*Última actualización</div>
 			<div class="col-md-9">
 				<h4><a href="portafolio.html">Ver portafolio</a></h4>
@@ -382,6 +395,15 @@
 
 <script type="text/javascript">
 	// Set default language
+	$('#dropdownNav').text(langEn["dropdownNav"]);
+	$('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
+	$('#educationNav').text(langEn["educationNav"]);
+	$('#certificationsNav').text(langEn["certificationsNav"]);
+	$('#portfolioNav').text(langEn["portfolioNav"]);
+	$('#professionalExperience').text(langEn["professionalExperience"]);
+	$('#education').text(langEn["education"]);
+	$('#certifications').text(langEn["certifications"]);
+	$('#portfolio').text(langEn["portfolio"]);
 	$('#rol').text(langEn["rol"]);
 	$('#resume1').text(langEn["resume1"]);
 	$('#resume2').text(langEn["resume2"]);
@@ -410,31 +432,53 @@
 	$(document).ready(function() {
 
 	$('#translateToSpanish').click(function(){
-	    $('#rol').text(langEs["rol"]);
-			$('#resume1').text(langEs["resume1"]);
-			$('#resume2').text(langEs["resume2"]);
-			$('#location').text(langEs["location"]);
-			$('#email').text(langEs["email"]);
-			$('#linkedin').text(langEs["linkedin"]);
-			$('#github').text(langEs["github"]);
-			$('#car').text(langEs["car"]);
-			$('#proffesionalSkills').text(langEs["proffesionalSkills"]);
-			$('#languages').text(langEs["languages"]);
-			$('#english').text(langEs["english"]);
-			$('#spanish').text(langEs["spanish"]);
-			$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
-			$('#otherKnowledge').text(langEs["otherKnowledge"]);
-			$('#repositoryDevelopment').text(langEs["repositoryDevelopment"]);
-			$('#testMethods').text(langEs["testMethods"]);
-			$('#testTools').text(langEs["testTools"]);
-			$('#manageTools').text(langEs["manageTools"]);
-			$('#agileMthodology').text(langEs["agileMthodology"]);
-			$('#clouds').text(langEs["clouds"]);
-			$('#database').text(langEs["database"]);
-			$('#os').text(langEs["os"]);
+		$('#dropdownNav').text(langEs["dropdownNav"]);
+		$('#professionalExperienceNav').text(langEs["professionalExperienceNav"]);
+		$('#educationNav').text(langEs["educationNav"]);
+		$('#certificationsNav').text(langEs["certificationsNav"]);
+		$('#portfolioNav').text(langEs["portfolioNav"]);
+		$('#professionalExperience').text(langEs["professionalExperience"]);
+		$('#education').text(langEs["education"]);
+		$('#certifications').text(langEs["certifications"]);
+		$('#portfolio').text(langEs["portfolio"]);
+    $('#rol').text(langEs["rol"]);
+		$('#resume1').text(langEs["resume1"]);
+		$('#resume2').text(langEs["resume2"]);
+		$('#location').text(langEs["location"]);
+		$('#email').text(langEs["email"]);
+		$('#linkedin').text(langEs["linkedin"]);
+		$('#github').text(langEs["github"]);
+		$('#car').text(langEs["car"]);
+		$('#proffesionalSkills').text(langEs["proffesionalSkills"]);
+		$('#languages').text(langEs["languages"]);
+		$('#english').text(langEs["english"]);
+		$('#spanish').text(langEs["spanish"]);
+		$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
+		$('#otherKnowledge').text(langEs["otherKnowledge"]);
+		$('#repositoryDevelopment').text(langEs["repositoryDevelopment"]);
+		$('#testMethods').text(langEs["testMethods"]);
+		$('#testTools').text(langEs["testTools"]);
+		$('#manageTools').text(langEs["manageTools"]);
+		$('#agileMthodology').text(langEs["agileMthodology"]);
+		$('#clouds').text(langEs["clouds"]);
+		$('#database').text(langEs["database"]);
+		$('#os').text(langEs["os"]);
+
+		// Change active class
+		$('#linkEng').removeClass('active');
+		$('#linkEsp').addClass('active');
 	});
 
 	$('#translateToEnglish').click(function(){
+		$('#dropdownNav').text(langEn["dropdownNav"]);
+		$('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
+		$('#educationNav').text(langEn["educationNav"]);
+		$('#certificationsNav').text(langEn["certificationsNav"]);
+		$('#portfolioNav').text(langEn["portfolioNav"]);
+		$('#professionalExperience').text(langEn["professionalExperience"]);
+		$('#education').text(langEn["education"]);
+		$('#certifications').text(langEn["certifications"]);
+		$('#portfolio').text(langEn["portfolio"]);
     $('#rol').text(langEn["rol"]);
 		$('#resume1').text(langEn["resume1"]);
 		$('#resume2').text(langEn["resume2"]);
@@ -457,6 +501,10 @@
 		$('#clouds').text(langEn["clouds"]);
 		$('#database').text(langEn["database"]);
 		$('#os').text(langEn["os"]);
+
+		// Change active class
+		$('#linkEng').addClass('active');
+		$('#linkEsp').removeClass('active');
 	});
 
 		//$('#actitud').height($(document).height());
