@@ -16,7 +16,7 @@
 
 <body id="curriculum">
 
-<!-- TOP BAR -->
+<!-- ######################## Nav topbar ############################ -->
 <nav id="topBar" class="navbar navbar-default">
   <div class="container-fluid">
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,6 +60,7 @@
 		<div id="resume"></div>
 	</div>
 
+<!-- ######################## Cover Letter ############################ -->
 	<div class="panel-group no-print" id="accordion" role="tablist" aria-multiselectable="true">
 		<div class="panel panel-default">
 	    	<div class="panel-heading" role="tab" id="headingThree">
@@ -71,11 +72,11 @@
 	    	</div>
 	    	<div id="cartaPresentacion" class="panel-collapse collapse justify" role="tabpanel" aria-labelledby="headingThree">
 	      		<div class="panel-body" id="presentacion">
-	      		<div id="coverLetter"></div>
-					<a id="printLetter" class="print-link no-print fa fa-print btn btn-default"> </a>
-				</div>
-	      	</div>
-	    </div>
+	      			<div id="coverLetter"></div>
+							<a id="printLetter" class="print-link no-print fa fa-print btn btn-default"></a>
+						</div>
+	      </div>
+	  </div>
 	</div>
 
 	<div id="experiencia-profesional">
@@ -133,53 +134,53 @@
 <!-- #################### Certificaciones Google Activate #################### -->
 		<div class="row entity certification-group" id="google-activate">
 			<div class="col-md-3">
-				<img src="images/google-activate.png" alt="Certificado Google Activate">
+				<img src="images/google-activate.png" alt="Google Activate">
 			</div>
 			<div class="col-md-9">
-				<p>Curso donde se imparten las habilidades y conceptos básicos para crear aplicaciones para dispositivos móviles. Este curso se presenta los principios esenciales que deben inspirar la creación de las aplicaciones, y así enfocar bien su diseño y programación desde el principio.</p>
+				<p id="googleActivateDetails"></p>
 			</div>
 		</div>
 
 		<div id="certificaciones-google-activate" class="certification-icon">
 			<div class="col-md-3"><br>
-				<img src="images/icon_desarrollo-apps.png" alt="Curso online de Desarrollo de Apps"/>
+				<img src="images/icon_desarrollo-apps.png" alt="Mobile course"/>
 			</div>
 			<div class="col-md-9">
-				<h4><a href="docs/Certificado_curso_de_desarrollo_de_apps_moviles.pdf">Curso de Desarrollo de Apps Móviles</a></h4>
-				<strong>Universidad Complutense de Madrid</strong>
-				<p>Principios esenciales para la creación, diseño y programación de aplicaciones móviles.</p>
+				<h4><a id="googleActivateMobileCourse" href="docs/Certificado_curso_de_desarrollo_de_apps_moviles.pdf"></a></h4>
+				<strong id="googleActivateMobileEmisor"></strong>
+				<p id="googleActivateMobileDetails"></p>
 			</div>
 
 			<div class="col-md-3"><br>
-				<img src="images/icon_desarrollo-web.png" alt="Curso online de Desarrollo Web"/>
+				<img src="images/icon_desarrollo-web.png" alt="Web development course"/>
 			</div>
 			<div class="col-md-9">
-				<h4><a href="docs/Certificado_curso_de_desarrollo_web.pdf">Curso de Introducción al Desarrollo Web (1)</a></h4>
-				<strong>Instituto de Economía Internacional</strong>
-				<p>Introducción al diseño web. Historia de la Web y creación de páginas web correctas con HTML5.</p>
+				<h4><a id="googleActivateWebCourse" href="docs/Certificado_curso_de_desarrollo_web.pdf"></a></h4>
+				<strong id="googleActivateWebEmisor"></strong>
+				<p id="googleActivateWebDetails"></p>
 			</div>
 
 			<div class="col-md-3"><br>
-				<img src="images/icon_comercio-electronico.png" alt="Curso de Cloud Computing"/>
+				<img src="images/icon_comercio-electronico.png" alt="Cloud Computing course"/>
 			</div>
 			<div class="col-md-9">
-				<h4><a href="docs/Certificado_curso_de_cloud_computing.pdf">Curso de Cloud Computing</a></h4>
-				<strong>Escuela de Organización Industrial</strong>
-				<p>Posibilidades que ofrece el mundo Cloud a los negocios. Cómo innovar para adaptarse las nuevas tecnologías. Acceso a la información desde cualquier dispositivo y de forma segura.</p>
+				<h4><a id="googleActivateCloudCourse" href="docs/Certificado_curso_de_cloud_computing.pdf"></a></h4>
+				<strong id="googleActivateCloudEmisor"></strong>
+				<p id="googleActivateCloudDetails"></p>
 			</div>
 		</div>
 
 		<hr/>
 
 <!-- #################### Certificacion Iter #################### -->
-		<div class="row entity" id="iter" title="Pulsa para ver certificado del Instituo Tecnológico de Energías Renovables (ITER)">
+		<div class="row entity" id="iter">
 			<div class="col-md-3">
-				<img src="images/iter-logo.png" alt="Certificado ITER">
+				<img src="images/iter-logo.png" alt="ITER certificate">
 			</div>
 			<div class="col-md-9">
-				<h4><a href="docs/certificadoITER.pdf">Centro de Excelencia de Desarrollo e Innovación (CEDEeI)</a></h4>
-				<strong>Instituto Tecnológico y de Energías Renovables</strong>
-				<p>En la actualidad, el ITER es un centro de investigación de referencia internacional en energías renovables, ingeniería, telecomunicaciones y medio ambiente. Aquí aprendí distintas tecnologías, Java y Android entre otras.</p>
+				<h4><a id="iterCourse" href="docs/certificadoITER.pdf"></a></h4>
+				<strong id="iterCompany"></strong>
+				<p id="iterDetails"></p>
 			</div>
 		</div>
 
@@ -191,7 +192,7 @@
 				<img src="images/codeschool.png" alt="Certificados CodeSchool" title="Pulsa para ver certificados Code School"/>
 			</div>
 			<div class="col-md-9">
-				<p><span onclick="myFunction()">Code School</span> es un portal online dirigido a desarrollaodres que enseña a través de contenidos de entretenimiento. Con más de 50 cursos (Ruby, JavaScript, HTML/CSS, iOS, Git, bases de datos, etc.) Code School junta experimentados instructores con un contenido atractivo y de alta calidad inspirado para su comunidad. Más de 1 millón de personas en todo el mundo visita Code School para mejorar sus habilidades de desarrollo y aprender sobre la marcha.</p>
+				<p><span id="codeSchoolDetails"></span></p>
 			</div>
 		</div>
 
@@ -202,7 +203,7 @@
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/24">Try Ruby</a></h4>
 				<strong>Code School</strong>
-				<p>Elementos de bloques de construcción básicos en Ruby.</p>
+				<p id="rubyCourseDetails"></p>
 			</div>
 
 			<div class="col-md-3"><br>
@@ -211,7 +212,7 @@
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/392">Shaping up with Angular.js</a></h4>
 				<strong>Code School</strong>
-				<p>Angular permite que su aplicación tenga una biblioteca de HTML ampliado. Aprender a sumar a su comportamiento HTML y acelerar la capacidad de respuesta de la aplicación.</p>
+				<p id="angularCourseDetails"></p>
 			</div>
 
 			<div class="col-md-3"><br>
@@ -220,7 +221,7 @@
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/296">JavaScript Road Trip Part 1</a></h4>
 				<strong>Code School</strong>
-				<p>Una introducción a los conceptos básicos del lenguaje JavaScript. Construir una base de la sintaxis de JavaScript y aprender a utilizar los valores, variables y archivos.</p>
+				<p id="javascriptCourse1Details"></p>
 			</div>
 
 			<div class="col-md-3"><br>
@@ -229,7 +230,7 @@
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/121">Try Git</a></h4>
 				<strong>Code School</strong>
-				<p>Aprende a usar Git mediante la revisión de los conceptos básicos de control de versiones Git. Curso de introducción que se creó con GitHub.</p>
+				<p id="gitCourseDetails"></p>
 			</div>
 
 			<div class="col-md-3"><br>
@@ -238,7 +239,7 @@
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/490">Try SQL</a></h4>
 				<strong>Code School</strong>
-				<p>Lecciones de habilidades básicas de manipulación en base de datos utilizado en el lenguaje de programación SQL.</p>
+				<p id="sqlCourseDetails"></p>
 			</div>
 
 			<div class="col-md-3"><br>
@@ -247,24 +248,25 @@
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/191">Try jQuery</a></h4>
 				<strong>Code School</strong>
-				<p>Conceptos básicos de jQuery 2.0, una biblioteca JavaScript, modificar elementos de la página y mejorar la interacción del usuario.</p>
+				<p id="jqueryCourseDetails"></p>
 			</div>
 		</div>
 
 
+<!-- #################### PORTFOLIO #################### -->
 		<div class="no-print">
 			<h4><i class="fa fa-folder-open"> <strong id="portfolio"></strong></i></h4>
-			<div class="col-md-3"><br>11/02/2016*<br>*Última actualización</div>
+			<div class="col-md-3"><br><span id="portfolioTime"></span><br><span id="portfolioLastUpdate"></span></div>
 			<div class="col-md-9">
-				<h4><a href="portafolio.html">Ver portafolio</a></h4>
-				<p>Aquí podrás encontrar algunos de mis proyectos, prácticas y trabajos en los que he colaborado.</p>
+				<h4><a id="portfolioView" href="portafolio.html"></a></h4>
+				<p id="portfolioDetails"></p>
 			</div>
 		</div>
 
 	</div>
 
 	<div id="cv" class="enlace-fin">
-		<button class="print-link no-print btn btn-primary btn-lg">Obtener CV</button>
+		<button id="getCv" class="print-link no-print btn btn-primary btn-lg"></button>
 	</div>
 </div>
 
@@ -406,195 +408,23 @@
 	</div>
 </div>
 
+<!-- #################### FOOTER #################### -->
+  	<footer id="footer">
+   		<a href="http://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63/es" target="_blank"><img src="images/linkedin-icon.png" alt="Linkedin" title="Linkedin" style="width:48px;height:48px;border:0"></a>
+			<a href="https://github.com/alu0100207385" target="_blank"><img src="images/github_icon.png" alt="Github" title="Github" style="width:48px;height:48px;border:0"></a>
+	  	<a href="http://www.ull.es/view/centros/etsii/Inicio/es" target="_blank"><img src="images/ull_icon.png" alt="ETSII" title="ETSII" style="width:48px;height:48px;border:0"></a>
+  	</footer>
+
+
 <script type="text/javascript">
 	// Set default language
-	$('#dropdownNav').text(langEn["dropdownNav"]);
-	$('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
-	$('#educationNav').text(langEn["educationNav"]);
-	$('#certificationsNav').text(langEn["certificationsNav"]);
-	$('#portfolioNav').text(langEn["portfolioNav"]);
-	$('#professionalExperience').text(langEn["professionalExperience"]);
-	$('#education').text(langEn["education"]);
-	$('#certifications').text(langEn["certifications"]);
-	$('#portfolio').text(langEn["portfolio"]);
-	$('#rol').text(langEn["rol"]);
-	$('#resume').html(langEn["resume"]);
-	$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
-	$('#coverLetter').html(langEn["coverLetter"]);
-	$('#printLetter').text(langEn["printLetter"]);
-	$('#atosTime').text(langEn["atosTime"]);
-	$('#atosRol').text(langEn["atosRol"]);
-	$('#atosTasks').html(langEn["atosTasks"]);
-	$('#integraTime').text(langEn["integraTime"]);
-	$('#integraRol').text(langEn["integraRol"]);
-	$('#integraTasks').html(langEn["integraTasks"]);
-	$('#laLagunaTime').text(langEn["laLagunaTime"]);
-	$('#laLagunaRol').text(langEn["laLagunaRol"]);
-	$('#laLagunaCompany').text(langEn["laLagunaCompany"]);
-	$('#laLagunaTasks').html(langEn["laLagunaTasks"]);
-	$('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
-	$('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
-	$('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
-	$('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
-	$('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
-	$('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
-	$('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
-	$('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
-	$('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
-	$('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
-	$('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
-	$('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
-
-
-	$('#location').text(langEn["location"]);
-	$('#email').text(langEn["email"]);
-	$('#linkedin').text(langEn["linkedin"]);
-	$('#github').text(langEn["github"]);
-	$('#car').text(langEn["car"]);
-	$('#proffesionalSkills').text(langEn["proffesionalSkills"]);
-	$('#languages').text(langEn["languages"]);
-	$('#english').text(langEn["english"]);
-	$('#spanish').text(langEn["spanish"]);
-	$('#otherKnowledge').text(langEn["otherKnowledge"]);
-	$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
-	$('#testMethods').text(langEn["testMethods"]);
-	$('#testTools').text(langEn["testTools"]);
-	$('#manageTools').text(langEn["manageTools"]);
-	$('#agileMthodology').text(langEn["agileMthodology"]);
-	$('#clouds').text(langEn["clouds"]);
-	$('#database').text(langEn["database"]);
-	$('#os').text(langEn["os"]);
+	translateToEnglish();
 
 	$('#certificaciones-codeschool').hide();
 	$('#certificaciones-google-activate').hide();
 	$(document).ready(function() {
 
-	$('#translateToSpanish').click(function(){
-		$('#dropdownNav').text(langEs["dropdownNav"]);
-		$('#professionalExperienceNav').text(langEs["professionalExperienceNav"]);
-		$('#educationNav').text(langEs["educationNav"]);
-		$('#certificationsNav').text(langEs["certificationsNav"]);
-		$('#portfolioNav').text(langEs["portfolioNav"]);
-		$('#professionalExperience').text(langEs["professionalExperience"]);
-		$('#education').text(langEs["education"]);
-		$('#certifications').text(langEs["certifications"]);
-		$('#portfolio').text(langEs["portfolio"]);
-    $('#rol').text(langEs["rol"]);
-		$('#resume').html(langEs["resume"]);
-		$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
-		$('#coverLetter').html(langEs["coverLetter"]);
-		$('#printLetter').text(langEs["printLetter"]);
-		$('#atosTime').text(langEs["atosTime"]);
-		$('#atosRol').text(langEs["atosRol"]);
-		$('#atosTasks').html(langEs["atosTasks"]);
-		$('#integraTime').text(langEs["integraTime"]);
-		$('#integraRol').text(langEs["integraRol"]);
-		$('#integraTasks').html(langEs["integraTasks"]);
-		$('#laLagunaTime').text(langEs["laLagunaTime"]);
-		$('#laLagunaRol').text(langEs["laLagunaRol"]);
-		$('#laLagunaCompany').text(langEs["laLagunaCompany"]);
-		$('#laLagunaTasks').html(langEs["laLagunaTasks"]);
-		$('#chamberOfCommerceTime').text(langEs["chamberOfCommerceTime"]);
-		$('#chamberOfCommerceRol').text(langEs["chamberOfCommerceRol"]);
-		$('#chamberOfCommerceCompany').text(langEs["chamberOfCommerceCompany"]);
-		$('#chamberOfCommerceTasks').html(langEs["chamberOfCommerceTasks"]);
-		$('#educationLaLagunaTime').text(langEs["educationLaLagunaTime"]);
-		$('#educationLaLagunaCareer').text(langEs["educationLaLagunaCareer"]);
-		$('#educationLaLagunaCompany').text(langEs["laLagunaCompany"]);
-		$('#educationLaLagunaDetails').html(langEs["educationLaLagunaDetails"]);
-		$('#educationCesarManriqueTime').text(langEs["educationCesarManriqueTime"]);
-		$('#educationCesarManriqueRol').text(langEs["educationCesarManriqueRol"]);
-		$('#educationCesarManriqueCompany').text(langEs["educationCesarManriqueCompany"]);
-		$('#educationCesarManriqueDetails').html(langEs["educationCesarManriqueDetails"]);
-
-
-		$('#location').text(langEs["location"]);
-		$('#email').text(langEs["email"]);
-		$('#linkedin').text(langEs["linkedin"]);
-		$('#github').text(langEs["github"]);
-		$('#car').text(langEs["car"]);
-		$('#proffesionalSkills').text(langEs["proffesionalSkills"]);
-		$('#languages').text(langEs["languages"]);
-		$('#english').text(langEs["english"]);
-		$('#spanish').text(langEs["spanish"]);
-		$('#otherKnowledge').text(langEs["otherKnowledge"]);
-		$('#repositoryDevelopment').text(langEs["repositoryDevelopment"]);
-		$('#testMethods').text(langEs["testMethods"]);
-		$('#testTools').text(langEs["testTools"]);
-		$('#manageTools').text(langEs["manageTools"]);
-		$('#agileMthodology').text(langEs["agileMthodology"]);
-		$('#clouds').text(langEs["clouds"]);
-		$('#database').text(langEs["database"]);
-		$('#os').text(langEs["os"]);
-
-		// Change active class
-		$('#linkEng').removeClass('active');
-		$('#linkEsp').addClass('active');
-	});
-
-	$('#translateToEnglish').click(function(){
-		$('#dropdownNav').text(langEn["dropdownNav"]);
-		$('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
-		$('#educationNav').text(langEn["educationNav"]);
-		$('#certificationsNav').text(langEn["certificationsNav"]);
-		$('#portfolioNav').text(langEn["portfolioNav"]);
-		$('#professionalExperience').text(langEn["professionalExperience"]);
-		$('#education').text(langEn["education"]);
-		$('#certifications').text(langEn["certifications"]);
-		$('#portfolio').text(langEn["portfolio"]);
-    $('#rol').text(langEn["rol"]);
-		$('#resume').html(langEn["resume"]);
-		$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
-		$('#coverLetter').html(langEn["coverLetter"]);
-		$('#printLetter').text(langEn["printLetter"]);
-		$('#atosTime').text(langEn["atosTime"]);
-		$('#atosRol').text(langEn["atosRol"]);
-		$('#atosTasks').html(langEn["atosTasks"]);
-		$('#integraTime').text(langEn["integraTime"]);
-		$('#integraRol').text(langEn["integraRol"]);
-		$('#integraTasks').html(langEn["integraTasks"]);
-		$('#laLagunaTime').text(langEn["laLagunaTime"]);
-		$('#laLagunaRol').text(langEn["laLagunaRol"]);
-		$('#laLagunaCompany').text(langEs["laLagunaCompany"]);
-		$('#laLagunaTasks').html(langEn["laLagunaTasks"]);
-		$('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
-		$('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
-		$('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
-		$('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
-		$('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
-		$('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
-		$('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
-		$('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
-		$('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
-		$('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
-		$('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
-		$('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
-
-		$('#location').text(langEn["location"]);
-		$('#email').text(langEn["email"]);
-		$('#linkedin').text(langEn["linkedin"]);
-		$('#github').text(langEn["github"]);
-		$('#car').text(langEn["car"]);
-		$('#proffesionalSkills').text(langEn["proffesionalSkills"]);
-		$('#languages').text(langEn["languages"]);
-		$('#english').text(langEn["english"]);
-		$('#spanish').text(langEn["spanish"]);
-		$('#otherKnowledge').text(langEn["otherKnowledge"]);
-		$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
-		$('#testMethods').text(langEn["testMethods"]);
-		$('#testTools').text(langEn["testTools"]);
-		$('#manageTools').text(langEn["manageTools"]);
-		$('#agileMthodology').text(langEn["agileMthodology"]);
-		$('#clouds').text(langEn["clouds"]);
-		$('#database').text(langEn["database"]);
-		$('#os').text(langEn["os"]);
-
-		// Change active class
-		$('#linkEng').addClass('active');
-		$('#linkEsp').removeClass('active');
-	});
-
-		//$('#actitud').height($(document).height());
+		$('#actitud').height($('#aptitud').height());
 		$('#codeschool').click(function(){
 			$('#certificaciones-codeschool').toggle(500);
 		});

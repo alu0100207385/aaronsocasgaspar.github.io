@@ -79,3 +79,9 @@ i {
 #topBar {
 	margin-bottom: 0px;
 }
+
+#footer {
+	background-color: #f5f5f5;
+	text-align: center;
+	padding: 15px;
+}
