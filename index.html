@@ -10,33 +10,54 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/print.js"></script>
+	<script type="text/javascript" src="js/lang.en.js"></script>
+	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
 
 <body id="curriculum">
 
+<!-- TOP BAR -->
+<nav id="topBar" class="navbar navbar-default">
+  <div class="container-fluid">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<ul class="nav navbar-nav">
+      	<li id="linkEng" class="active"><a id="translateToEnglish" href="#">ENG<span class="sr-only"></span></a></li>
+      	<li id="linkEsp"><a id="translateToSpanish" href="#">ESP</a></li>
+      	<li class="dropdown"><a id="dropdownNav" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+	        <ul class="dropdown-menu">
+	          <li><a id="professionalExperienceNav" href="#professionalExperience"></a></li>
+	          <li><a id="educationNav" href="#education"></a></li>
+	          <li><a id="certificationsNav" href="#certifications"></a></li>
+	          <li><a id="portfolioNav" href="#portfolio"></a></li>
+	        </ul>
+      	</li>
+    	</ul>
+  	</div>
+  </div>
+</nav>
+
 <div id="aptitud" class="col-md-8">
 	<h2>Aarón Socas Gaspar</h2>
+	<div class="clearfix"></div>
 	<div class="col-md-12">
 		<div class="row-fluid" id="datos0" hidden>
 			<div>
 				<img class="foto" src="images/foto_peq2.png" alt="Foto Aarón">
 			</div>
 			<div>
-				<p><i class="fa fa-map-marker"></i> S/C de Tenerife. España</p>
-				<p><i class="fa fa-envelope-o"></i> socasgaspar@gmailcom</p>
-				<p><i class="fa fa-linkedin"></i> https://es.linkedin.com/in/aaronsocasgaspar</p>
-				<p><i class="fa fa-github"></i> https://github.com/alu0100207385</p>
-				<p><i class="fa fa-car"></i> Vehículo propio</p>
+				<p><i class="fa fa-map-marker"></i></p>
+				<p><i class="fa fa-envelope-o"></i></p>
+				<p><i class="fa fa-linkedin"></i></p>
+				<p><i class="fa fa-github"></i></p>
+				<p><i class="fa fa-car"></i></p>
 			</div>
 		</div>
 	</div>
 
 
 	<div class="row-fluid" id="resumen">
-		<h4>Programador web</h4>
-		<p>Mi nombre es Aarón Socas Gaspar. Estoy graduado en Ingeniería
-			Informática por la Universidad de La Laguna. He orientado mi formación en el uso de tecnologías de la información, la cual engloba conocimientos relacionados con programación web, seguridad, redes y tratamiento	de la información.</p>
-		<p>Me considero una persona trabajadora, activa, dinámica y práctica. Doy importancia al objetivo del proyecto y esto me hace esforzarme más en mi trabajo. Quiero seguir aprendiendo y colaborar en proyectos interesantes.</p>
+		<h4 id="rol"></h4>
+		<div id="resume"></div>
 	</div>
 
 	<div class="panel-group no-print" id="accordion" role="tablist" aria-multiselectable="true">
@@ -44,75 +65,70 @@
 	    	<div class="panel-heading" role="tab" id="headingThree">
 	      		<h3 class="panel-title">
 	        		<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#cartaPresentacion" aria-expanded="false">
-	          			<i class="fa fa-envelope-o" style="color:inherit;"> CARTA DE PRESENTACIÓN</i>
+	          			<i class="fa fa-envelope-o" style="color:inherit;"> <span id="coverLetterTitle"></span></i>
 	        		</a>
 	      		</h3>
 	    	</div>
 	    	<div id="cartaPresentacion" class="panel-collapse collapse justify" role="tabpanel" aria-labelledby="headingThree">
 	      		<div class="panel-body" id="presentacion">
-					<p>Estimado Sr/Sra:<p>
-					<p>Mi nombre es Aarón Socas Gaspar, soy Graduado en Ingeniería Informática por la ULL. Decidí formarme en el ámbito tecnológico porque siempre me llamó la atención así como sus aplicaciones y salida laboral.</p>
-					<p>Actualmente estoy trabajando para Atos dentro del departamento de I+D+i, investigando y desarrollando software relacionados con la seguridad y privacidad.</p>
-					<p>Mi experiencia profesional como desarrollador nace en la empresa INTEGRA Tecnología y Comunicación de Canarias, SL. También poseo conocimientos en administración de sistemas, tengo el título de formación profesional 2º grado de Diplomado Técnico Superior en Sistemas y estuve como becario en la Cámara de Comercio de Santa Cruz de Tenerife y en la Universidad de La Laguna. He orientado mi formación hacia la tecnología web, desarrollo en la nube, gestión de contenidos y seguridad.</p>
-					<p>Soy una persona activa, curiosa. responsable, constante y perfeccionista, con una gran capacidad de trabajo y esfuerzo. Soy capaz de adaptarme a las distintas situaciones y a los cambios, pudiendo trabajar de forma efectiva en equipo o individual.</p>
-					<p>Un cordial saludo,<br>Aarón Socas Gaspar</p>
-					<a class="print-link no-print fa fa-print btn btn-default"> Imprimir</a>
+	      		<div id="coverLetter"></div>
+					<a id="printLetter" class="print-link no-print fa fa-print btn btn-default"> </a>
 				</div>
 	      	</div>
 	    </div>
 	</div>
 
 	<div id="experiencia-profesional">
-		<h4><i class="fa fa-briefcase"> <strong>EXPERIENCIA PROFESIONAL</strong></i></h4>
-		<div class="col-md-3"><br>25/09/2015 - Actualmente</div>
+		<h4><i class="fa fa-briefcase"> <strong id="professionalExperience"></strong></i></h4>
+		<div class="col-md-3"><br><span id="atosTime"></span></div>
 		<div class="col-md-9">
-			<h4>Investigación y Desarrollo(I+D+i)</h4>
-			<strong>ATOS (CEDeI)</strong>
-			<p>Estoy asignado en el departamento de I+D+i, actualmente trabajando en proyectos relacionados con la seguridad, privacidad y criptografía. Estamos desarrollando aplicaciones Android para el proyecto <a href="http://abc4eu.com/">ABC4EU</a>.
+			<h4 id="atosRol"></h4>
+			<strong>ATOS</strong>
+			<div id="atosTasks"></div>
 		</div>
 
-		<div class="col-md-3"><br>23/02/2015 - 07/05/2015</div>
+		<div class="col-md-3"><br><span id="integraTime"></span></div>
 		<div class="col-md-9">
-			<h4>Programador web / Prácticas</h4>
+			<h4 id="integraRol"></h4>
 			<strong>INTEGRA Tecnología y Comunicación de Canarias, SL</strong>
-			<p>Colaboré en distintos proyectos en el departamento de desarrollo. Principalmente me dediqué al desarrollo de aplicaciones y diseño web. Utilicé herramientas como Laravel, Joomla y adquirí experiencia práctica en la metodología scrum.</p>
+			<div id="integraTasks"></div>
 		</div>
 
-		<div class="col-md-3"><br>01/10/2013 - 30/06/2015</div>
+		<div class="col-md-3"><br><span id="laLagunaTime"></span></div>
 		<div class="col-md-9">
-			<h4>Técnico de sistemas / Becario</h4>
-			<strong>Universidad de La Laguna</strong>
-			<p>Tareas de mantenimiento: instalaciones y configuración de software y SO, clonaciones, limpieza, seguridad, scripts, etc. Trabajo con equipos de mesa y otros dispositivos multimedia.</p>
+			<h4 id="laLagunaRol"></h4>
+			<strong id="laLagunaCompany"></strong>
+			<div id="laLagunaTasks"></div>
 		</div>
 
-		<div class="col-md-3"><br>04/2007 - 06/2007</div>
+		<div class="col-md-3"><br><span id="chamberOfCommerceTime"></span></div>
 		<div class="col-md-9">
-			<h4>Técnico de sistemas / Prácticas</h4>
-			<strong>Cámara de Comercio de Santa Cruz de Tenerife</strong>
-			<p>Instalación, administración y configuración de equipos y desarrollo de mejoras en los sistemas de la empresa. Manejo y mantenimiento de los paquetes informáticos de propósito general y específico utilizados en la empresa.</p>
+			<h4 id="chamberOfCommerceRol"></h4>
+			<strong id="chamberOfCommerceCompany"></strong>
+			<div id="chamberOfCommerceTasks"></div>
 		</div>
 	</div>
 
 	<div id="educacion">
-		<h4><i class="fa fa-graduation-cap"> <strong>EDUCACIÓN</strong></i></h4>
-		<div class="col-md-3"><br>10/09/2012 - 22/09/2015</div>
+		<h4><i class="fa fa-graduation-cap"> <strong id="education"></strong></i></h4>
+		<div class="col-md-3"><br><span id="educationLaLagunaTime"></span></div>
 		<div class="col-md-9">
-			<h4>Grado en Ingeniería Informática</h4>
-			<strong>Universidad de La Laguna</strong>
-			<p>Itinerario: Tecnologías de la Información: Sistemas y tecnologías web, TI y gestión del conocimiento de las organizaciones, seguridad y redes.</p>
+			<h4 id="educationLaLagunaCareer"></h4>
+			<strong id="educationLaLagunaCompany"></strong>
+			<div id="educationLaLagunaDetails"></div>
 		</div>
 
-		<div class="col-md-3"><br>09/2005 - 07/2007</div>
+		<div class="col-md-3"><br><span id="educationCesarManriqueTime"></span></div>
 		<div class="col-md-9">
-			<h4>Técnico superior de sistemas informáticos</h4>
-			<strong>IES Cesar Manrique</strong>
-			<p>Implantar y administrar sistemas informáticos, gestión de redes, instalación de software y cambios para mejorar la explotación del sistema y las aplicaciones.</p>
+			<h4 id="educationCesarManriqueRol"></h4>
+			<strong id="educationCesarManriqueCompany"></strong>
+			<div id="educationCesarManriqueDetails"></div>
 		</div>
 	</div>
 
   <div id="certificaciones" class="no-print">
 
-		<h4><i class="fa fa-certificate"> <strong>CERTIFICACIONES</strong></i></h4>
+		<h4><i class="fa fa-certificate"> <strong id="certifications"></strong></i></h4>
 
 <!-- #################### Certificaciones Google Activate #################### -->
 		<div class="row entity certification-group" id="google-activate">
@@ -237,7 +253,7 @@
 
 
 		<div class="no-print">
-			<h4><i class="fa fa-folder-open"> <strong>PORTAFOLIO</strong></i></h4>
+			<h4><i class="fa fa-folder-open"> <strong id="portfolio"></strong></i></h4>
 			<div class="col-md-3"><br>11/02/2016*<br>*Última actualización</div>
 			<div class="col-md-9">
 				<h4><a href="portafolio.html">Ver portafolio</a></h4>
@@ -261,15 +277,15 @@
 		</div>
 
 		<div id="datos" class="no-print">
-			<p><i class="fa fa-map-marker"></i> S/C de Tenerife. España</p>
-			<p><i class="fa fa-envelope-o"> <a href="mailto:socasgaspar@gmailcom"> Correo</a></i></p>
-			<p><i class="fa fa-linkedin"> <a href="https://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63" target="_blank"> Ver mi linkedin</a></i></p>
-			<p><i class="fa fa-github"> <a href="https://github.com/alu0100207385" target="_blank"> Accede a mi repositorio</a></i></p>
-			<p><i class="fa fa-car"></i> Vehículo propio</p>
+			<p><i class="fa fa-map-marker"></i> <span id="location"></span></p>
+			<p><i class="fa fa-envelope-o"> <a id="email" href="mailto:socasgaspar@gmailcom"></a></i></p>
+			<p><i class="fa fa-linkedin"> <a id="linkedin" href="https://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63" target="_blank"></a></i></p>
+			<p><i class="fa fa-github"> <a id="github" href="https://github.com/alu0100207385" target="_blank"></a></i></p>
+			<p><i class="fa fa-car"></i> <span id="car"></span></p>
 		</div>
 
 		<div id="skills">
-			<h4><strong>HABILIDADES PROFESIONALES</strong></h4>
+			<h4><strong id="proffesionalSkills"></strong></h4>
 			HTML
 			<div class="progress">
   				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
@@ -329,25 +345,31 @@
 			</div>
 
 			<hr>
-			<h4>IDIOMAS</h4>
-			Inglés
+			<h4 id="languages"></h4>
+			<span id="english"></span>
 			<div class="progress">
-  				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+  				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    				<span class="sr-only"></span>
+  				</div>
+			</div>
+			<span id="spanish"></span>
+			<div class="progress">
+  				<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
     				<span class="sr-only"></span>
   				</div>
 			</div>
 			<hr>
 			<div id="otros-conocimientos">
-				<h4>OTROS CONOCIMIENTOS</h4>
+				<h4 id="otherKnowledge"></h4>
 				<ul>
-					<li>Desarrollo colaborativo: Github y Bitbucket</li>
-					<li>Métodos de pruebas: TDD e integración continua</li>
-					<li>Herramientas de pruebas: Selenium, Coveralls</li>
-					<li>Gestión de proyectos: PivotalTracker, OpenProject</li>
-					<li>Metodologías ágiles (Scrum)</li>
-					<li>Clouds: PaaS (Heroku, OpenShift)</li>
-					<li>SO Linux y Windows</li>
-					<li>C++</li>
+					<li id="repositoryDevelopment"></li>
+					<li id="testMethods"></li>
+					<li id="testTools"></li>
+					<li id="manageTools"></li>
+					<li id="agileMthodology"></li>
+					<li id="clouds"></li>
+					<li id="database"></li>
+					<li id="os"></li>
 				</ul>
 			</div>
 		</div>
@@ -385,11 +407,194 @@
 </div>
 
 <script type="text/javascript">
+	// Set default language
+	$('#dropdownNav').text(langEn["dropdownNav"]);
+	$('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
+	$('#educationNav').text(langEn["educationNav"]);
+	$('#certificationsNav').text(langEn["certificationsNav"]);
+	$('#portfolioNav').text(langEn["portfolioNav"]);
+	$('#professionalExperience').text(langEn["professionalExperience"]);
+	$('#education').text(langEn["education"]);
+	$('#certifications').text(langEn["certifications"]);
+	$('#portfolio').text(langEn["portfolio"]);
+	$('#rol').text(langEn["rol"]);
+	$('#resume').html(langEn["resume"]);
+	$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+	$('#coverLetter').html(langEn["coverLetter"]);
+	$('#printLetter').text(langEn["printLetter"]);
+	$('#atosTime').text(langEn["atosTime"]);
+	$('#atosRol').text(langEn["atosRol"]);
+	$('#atosTasks').html(langEn["atosTasks"]);
+	$('#integraTime').text(langEn["integraTime"]);
+	$('#integraRol').text(langEn["integraRol"]);
+	$('#integraTasks').html(langEn["integraTasks"]);
+	$('#laLagunaTime').text(langEn["laLagunaTime"]);
+	$('#laLagunaRol').text(langEn["laLagunaRol"]);
+	$('#laLagunaCompany').text(langEn["laLagunaCompany"]);
+	$('#laLagunaTasks').html(langEn["laLagunaTasks"]);
+	$('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
+	$('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
+	$('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
+	$('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
+	$('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
+	$('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
+	$('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
+	$('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
+	$('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
+	$('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
+	$('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
+	$('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
+
+
+	$('#location').text(langEn["location"]);
+	$('#email').text(langEn["email"]);
+	$('#linkedin').text(langEn["linkedin"]);
+	$('#github').text(langEn["github"]);
+	$('#car').text(langEn["car"]);
+	$('#proffesionalSkills').text(langEn["proffesionalSkills"]);
+	$('#languages').text(langEn["languages"]);
+	$('#english').text(langEn["english"]);
+	$('#spanish').text(langEn["spanish"]);
+	$('#otherKnowledge').text(langEn["otherKnowledge"]);
+	$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
+	$('#testMethods').text(langEn["testMethods"]);
+	$('#testTools').text(langEn["testTools"]);
+	$('#manageTools').text(langEn["manageTools"]);
+	$('#agileMthodology').text(langEn["agileMthodology"]);
+	$('#clouds').text(langEn["clouds"]);
+	$('#database').text(langEn["database"]);
+	$('#os').text(langEn["os"]);
 
 	$('#certificaciones-codeschool').hide();
 	$('#certificaciones-google-activate').hide();
 	$(document).ready(function() {
-		$('#actitud').height($(document).height());
+
+	$('#translateToSpanish').click(function(){
+		$('#dropdownNav').text(langEs["dropdownNav"]);
+		$('#professionalExperienceNav').text(langEs["professionalExperienceNav"]);
+		$('#educationNav').text(langEs["educationNav"]);
+		$('#certificationsNav').text(langEs["certificationsNav"]);
+		$('#portfolioNav').text(langEs["portfolioNav"]);
+		$('#professionalExperience').text(langEs["professionalExperience"]);
+		$('#education').text(langEs["education"]);
+		$('#certifications').text(langEs["certifications"]);
+		$('#portfolio').text(langEs["portfolio"]);
+    $('#rol').text(langEs["rol"]);
+		$('#resume').html(langEs["resume"]);
+		$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
+		$('#coverLetter').html(langEs["coverLetter"]);
+		$('#printLetter').text(langEs["printLetter"]);
+		$('#atosTime').text(langEs["atosTime"]);
+		$('#atosRol').text(langEs["atosRol"]);
+		$('#atosTasks').html(langEs["atosTasks"]);
+		$('#integraTime').text(langEs["integraTime"]);
+		$('#integraRol').text(langEs["integraRol"]);
+		$('#integraTasks').html(langEs["integraTasks"]);
+		$('#laLagunaTime').text(langEs["laLagunaTime"]);
+		$('#laLagunaRol').text(langEs["laLagunaRol"]);
+		$('#laLagunaCompany').text(langEs["laLagunaCompany"]);
+		$('#laLagunaTasks').html(langEs["laLagunaTasks"]);
+		$('#chamberOfCommerceTime').text(langEs["chamberOfCommerceTime"]);
+		$('#chamberOfCommerceRol').text(langEs["chamberOfCommerceRol"]);
+		$('#chamberOfCommerceCompany').text(langEs["chamberOfCommerceCompany"]);
+		$('#chamberOfCommerceTasks').html(langEs["chamberOfCommerceTasks"]);
+		$('#educationLaLagunaTime').text(langEs["educationLaLagunaTime"]);
+		$('#educationLaLagunaCareer').text(langEs["educationLaLagunaCareer"]);
+		$('#educationLaLagunaCompany').text(langEs["laLagunaCompany"]);
+		$('#educationLaLagunaDetails').html(langEs["educationLaLagunaDetails"]);
+		$('#educationCesarManriqueTime').text(langEs["educationCesarManriqueTime"]);
+		$('#educationCesarManriqueRol').text(langEs["educationCesarManriqueRol"]);
+		$('#educationCesarManriqueCompany').text(langEs["educationCesarManriqueCompany"]);
+		$('#educationCesarManriqueDetails').html(langEs["educationCesarManriqueDetails"]);
+
+
+		$('#location').text(langEs["location"]);
+		$('#email').text(langEs["email"]);
+		$('#linkedin').text(langEs["linkedin"]);
+		$('#github').text(langEs["github"]);
+		$('#car').text(langEs["car"]);
+		$('#proffesionalSkills').text(langEs["proffesionalSkills"]);
+		$('#languages').text(langEs["languages"]);
+		$('#english').text(langEs["english"]);
+		$('#spanish').text(langEs["spanish"]);
+		$('#otherKnowledge').text(langEs["otherKnowledge"]);
+		$('#repositoryDevelopment').text(langEs["repositoryDevelopment"]);
+		$('#testMethods').text(langEs["testMethods"]);
+		$('#testTools').text(langEs["testTools"]);
+		$('#manageTools').text(langEs["manageTools"]);
+		$('#agileMthodology').text(langEs["agileMthodology"]);
+		$('#clouds').text(langEs["clouds"]);
+		$('#database').text(langEs["database"]);
+		$('#os').text(langEs["os"]);
+
+		// Change active class
+		$('#linkEng').removeClass('active');
+		$('#linkEsp').addClass('active');
+	});
+
+	$('#translateToEnglish').click(function(){
+		$('#dropdownNav').text(langEn["dropdownNav"]);
+		$('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
+		$('#educationNav').text(langEn["educationNav"]);
+		$('#certificationsNav').text(langEn["certificationsNav"]);
+		$('#portfolioNav').text(langEn["portfolioNav"]);
+		$('#professionalExperience').text(langEn["professionalExperience"]);
+		$('#education').text(langEn["education"]);
+		$('#certifications').text(langEn["certifications"]);
+		$('#portfolio').text(langEn["portfolio"]);
+    $('#rol').text(langEn["rol"]);
+		$('#resume').html(langEn["resume"]);
+		$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+		$('#coverLetter').html(langEn["coverLetter"]);
+		$('#printLetter').text(langEn["printLetter"]);
+		$('#atosTime').text(langEn["atosTime"]);
+		$('#atosRol').text(langEn["atosRol"]);
+		$('#atosTasks').html(langEn["atosTasks"]);
+		$('#integraTime').text(langEn["integraTime"]);
+		$('#integraRol').text(langEn["integraRol"]);
+		$('#integraTasks').html(langEn["integraTasks"]);
+		$('#laLagunaTime').text(langEn["laLagunaTime"]);
+		$('#laLagunaRol').text(langEn["laLagunaRol"]);
+		$('#laLagunaCompany').text(langEs["laLagunaCompany"]);
+		$('#laLagunaTasks').html(langEn["laLagunaTasks"]);
+		$('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
+		$('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
+		$('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
+		$('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
+		$('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
+		$('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
+		$('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
+		$('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
+		$('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
+		$('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
+		$('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
+		$('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
+
+		$('#location').text(langEn["location"]);
+		$('#email').text(langEn["email"]);
+		$('#linkedin').text(langEn["linkedin"]);
+		$('#github').text(langEn["github"]);
+		$('#car').text(langEn["car"]);
+		$('#proffesionalSkills').text(langEn["proffesionalSkills"]);
+		$('#languages').text(langEn["languages"]);
+		$('#english').text(langEn["english"]);
+		$('#spanish').text(langEn["spanish"]);
+		$('#otherKnowledge').text(langEn["otherKnowledge"]);
+		$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
+		$('#testMethods').text(langEn["testMethods"]);
+		$('#testTools').text(langEn["testTools"]);
+		$('#manageTools').text(langEn["manageTools"]);
+		$('#agileMthodology').text(langEn["agileMthodology"]);
+		$('#clouds').text(langEn["clouds"]);
+		$('#database').text(langEn["database"]);
+		$('#os').text(langEn["os"]);
+
+		// Change active class
+		$('#linkEng').addClass('active');
+		$('#linkEsp').removeClass('active');
+	});
+
+		//$('#actitud').height($(document).height());
 		$('#codeschool').click(function(){
 			$('#certificaciones-codeschool').toggle(500);
 		});
