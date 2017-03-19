@@ -32,10 +32,6 @@
 	        </ul>
       	</li>
     	</ul>
-	  	<!--<ul class="nav navbar-nav navbar-right">
-	  		<li id="translateToSpanish">ESP</li>
-	  		<li id="translateToEnglish">ENG</li>
-	  	</ul>-->
   	</div>
   </div>
 </nav>
@@ -61,8 +57,7 @@
 
 	<div class="row-fluid" id="resumen">
 		<h4 id="rol"></h4>
-		<p id="resume1"></p>
-		<p id="resume2"></p>
+		<div id="resume"></div>
 	</div>
 
 	<div class="panel-group no-print" id="accordion" role="tablist" aria-multiselectable="true">
@@ -76,13 +71,8 @@
 	    	</div>
 	    	<div id="cartaPresentacion" class="panel-collapse collapse justify" role="tabpanel" aria-labelledby="headingThree">
 	      		<div class="panel-body" id="presentacion">
-					<p>Estimado Sr/Sra:<p>
-					<p>Mi nombre es Aarón Socas Gaspar, soy Graduado en Ingeniería Informática por la ULL. Decidí formarme en el ámbito tecnológico porque siempre me llamó la atención así como sus aplicaciones y salida laboral.</p>
-					<p>Actualmente estoy trabajando para Atos dentro del departamento de I+D+i, investigando y desarrollando módulos relacionados con la seguridad y privacidad.</p>
-					<p>Mi experiencia profesional como desarrollador la he realizado en la empresa INTEGRA Tecnología y Comunicación de Canarias, SL. También poseo conocimientos en administración de sistemas, tengo el título de formación profesional 2º grado de Diplomado Técnico Superior en Sistemas y estuve como becario en la Cámara de Comercio de Santa Cruz de Tenerife y en la Universidad de La Laguna. He orientado mi formación hacia la tecnología web, desarrollo en la nube, gestión de contenidos y seguridad.</p>
-					<p>Soy una persona activa, curiosa. responsable, constante y perfeccionista, con una gran capacidad de trabajo y esfuerzo. Soy capaz de adaptarme a las distintas situaciones y a los cambios, pudiendo trabajar de forma efectiva en equipo o individual.</p>
-					<p>Un cordial saludo,<br>Aarón Socas Gaspar</p>
-					<a class="print-link no-print fa fa-print btn btn-default"> Imprimir</a>
+	      		<div id="coverLetter"></div>
+					<a id="printLetter" class="print-link no-print fa fa-print btn btn-default"> </a>
 				</div>
 	      	</div>
 	    </div>
@@ -90,49 +80,49 @@
 
 	<div id="experiencia-profesional">
 		<h4><i class="fa fa-briefcase"> <strong id="professionalExperience"></strong></i></h4>
-		<div class="col-md-3"><br>25/09/2015 - Actualmente</div>
+		<div class="col-md-3"><br><span id="atosTime"></span></div>
 		<div class="col-md-9">
-			<h4>Investigación y Desarrollo(I+D+i)</h4>
-			<strong>ATOS (CEDeI)</strong>
-			<p>Estoy asignado en el departamento de I+D+i, actualmente trabajando en proyectos relacionados con la seguridad, privacidad y criptografía. Estamos desarrollando aplicaciones Android para el proyecto <a href="http://abc4eu.com/">ABC4EU</a>.
+			<h4 id="atosRol"></h4>
+			<strong>ATOS</strong>
+			<div id="atosTasks"></div>
 		</div>
 
-		<div class="col-md-3"><br>23/02/2015 - 07/05/2015</div>
+		<div class="col-md-3"><br><span id="integraTime"></span></div>
 		<div class="col-md-9">
-			<h4>Programador web / Prácticas</h4>
+			<h4 id="integraRol"></h4>
 			<strong>INTEGRA Tecnología y Comunicación de Canarias, SL</strong>
-			<p>Colaboré en distintos proyectos en el departamento de desarrollo. Principalmente me dediqué al desarrollo de aplicaciones y diseño web. Utilicé herramientas como Laravel, Joomla y adquirí experiencia práctica en la metodología scrum.</p>
+			<div id="integraTasks"></div>
 		</div>
 
-		<div class="col-md-3"><br>01/10/2013 - 30/06/2015</div>
+		<div class="col-md-3"><br><span id="laLagunaTime"></span></div>
 		<div class="col-md-9">
-			<h4>Técnico de sistemas / Becario</h4>
-			<strong>Universidad de La Laguna</strong>
-			<p>Tareas de mantenimiento: instalaciones y configuración de software y SO, clonaciones, limpieza, seguridad, scripts, etc. Trabajo con equipos de mesa y otros dispositivos multimedia.</p>
+			<h4 id="laLagunaRol"></h4>
+			<strong id="laLagunaCompany"></strong>
+			<div id="laLagunaTasks"></div>
 		</div>
 
-		<div class="col-md-3"><br>04/2007 - 06/2007</div>
+		<div class="col-md-3"><br><span id="chamberOfCommerceTime"></span></div>
 		<div class="col-md-9">
-			<h4>Técnico de sistemas / Prácticas</h4>
-			<strong>Cámara de Comercio de Santa Cruz de Tenerife</strong>
-			<p>Instalación, administración y configuración de equipos y desarrollo de mejoras en los sistemas de la empresa. Manejo y mantenimiento de los paquetes informáticos de propósito general y específico utilizados en la empresa.</p>
+			<h4 id="chamberOfCommerceRol"></h4>
+			<strong id="chamberOfCommerceCompany"></strong>
+			<div id="chamberOfCommerceTasks"></div>
 		</div>
 	</div>
 
 	<div id="educacion">
 		<h4><i class="fa fa-graduation-cap"> <strong id="education"></strong></i></h4>
-		<div class="col-md-3"><br>10/09/2012 - 22/09/2015</div>
+		<div class="col-md-3"><br><span id="educationLaLagunaTime"></span></div>
 		<div class="col-md-9">
-			<h4>Grado en Ingeniería Informática</h4>
-			<strong>Universidad de La Laguna</strong>
-			<p>Itinerario: Tecnologías de la Información: Sistemas y tecnologías web, TI y gestión del conocimiento de las organizaciones, seguridad y redes.</p>
+			<h4 id="educationLaLagunaCareer"></h4>
+			<strong id="educationLaLagunaCompany"></strong>
+			<div id="educationLaLagunaDetails"></div>
 		</div>
 
-		<div class="col-md-3"><br>09/2005 - 07/2007</div>
+		<div class="col-md-3"><br><span id="educationCesarManriqueTime"></span></div>
 		<div class="col-md-9">
-			<h4>Técnico superior de sistemas informáticos</h4>
-			<strong>IES Cesar Manrique</strong>
-			<p>Implantar y administrar sistemas informáticos, gestión de redes, instalación de software y cambios para mejorar la explotación del sistema y las aplicaciones.</p>
+			<h4 id="educationCesarManriqueRol"></h4>
+			<strong id="educationCesarManriqueCompany"></strong>
+			<div id="educationCesarManriqueDetails"></div>
 		</div>
 	</div>
 
@@ -405,8 +395,34 @@
 	$('#certifications').text(langEn["certifications"]);
 	$('#portfolio').text(langEn["portfolio"]);
 	$('#rol').text(langEn["rol"]);
-	$('#resume1').text(langEn["resume1"]);
-	$('#resume2').text(langEn["resume2"]);
+	$('#resume').html(langEn["resume"]);
+	$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+	$('#coverLetter').html(langEn["coverLetter"]);
+	$('#printLetter').text(langEn["printLetter"]);
+	$('#atosTime').text(langEn["atosTime"]);
+	$('#atosRol').text(langEn["atosRol"]);
+	$('#atosTasks').html(langEn["atosTasks"]);
+	$('#integraTime').text(langEn["integraTime"]);
+	$('#integraRol').text(langEn["integraRol"]);
+	$('#integraTasks').html(langEn["integraTasks"]);
+	$('#laLagunaTime').text(langEn["laLagunaTime"]);
+	$('#laLagunaRol').text(langEn["laLagunaRol"]);
+	$('#laLagunaCompany').text(langEn["laLagunaCompany"]);
+	$('#laLagunaTasks').html(langEn["laLagunaTasks"]);
+	$('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
+	$('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
+	$('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
+	$('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
+	$('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
+	$('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
+	$('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
+	$('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
+	$('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
+	$('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
+	$('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
+	$('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
+
+
 	$('#location').text(langEn["location"]);
 	$('#email').text(langEn["email"]);
 	$('#linkedin').text(langEn["linkedin"]);
@@ -416,7 +432,6 @@
 	$('#languages').text(langEn["languages"]);
 	$('#english').text(langEn["english"]);
 	$('#spanish').text(langEn["spanish"]);
-	$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
 	$('#otherKnowledge').text(langEn["otherKnowledge"]);
 	$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
 	$('#testMethods').text(langEn["testMethods"]);
@@ -426,7 +441,6 @@
 	$('#clouds').text(langEn["clouds"]);
 	$('#database').text(langEn["database"]);
 	$('#os').text(langEn["os"]);
-
 
 	$('#certificaciones-codeschool').hide();
 	$(document).ready(function() {
@@ -442,8 +456,34 @@
 		$('#certifications').text(langEs["certifications"]);
 		$('#portfolio').text(langEs["portfolio"]);
     $('#rol').text(langEs["rol"]);
-		$('#resume1').text(langEs["resume1"]);
-		$('#resume2').text(langEs["resume2"]);
+		$('#resume').html(langEs["resume"]);
+		$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
+		$('#coverLetter').html(langEs["coverLetter"]);
+		$('#printLetter').text(langEs["printLetter"]);
+		$('#atosTime').text(langEs["atosTime"]);
+		$('#atosRol').text(langEs["atosRol"]);
+		$('#atosTasks').html(langEs["atosTasks"]);
+		$('#integraTime').text(langEs["integraTime"]);
+		$('#integraRol').text(langEs["integraRol"]);
+		$('#integraTasks').html(langEs["integraTasks"]);
+		$('#laLagunaTime').text(langEs["laLagunaTime"]);
+		$('#laLagunaRol').text(langEs["laLagunaRol"]);
+		$('#laLagunaCompany').text(langEs["laLagunaCompany"]);
+		$('#laLagunaTasks').html(langEs["laLagunaTasks"]);
+		$('#chamberOfCommerceTime').text(langEs["chamberOfCommerceTime"]);
+		$('#chamberOfCommerceRol').text(langEs["chamberOfCommerceRol"]);
+		$('#chamberOfCommerceCompany').text(langEs["chamberOfCommerceCompany"]);
+		$('#chamberOfCommerceTasks').html(langEs["chamberOfCommerceTasks"]);
+		$('#educationLaLagunaTime').text(langEs["educationLaLagunaTime"]);
+		$('#educationLaLagunaCareer').text(langEs["educationLaLagunaCareer"]);
+		$('#educationLaLagunaCompany').text(langEs["laLagunaCompany"]);
+		$('#educationLaLagunaDetails').html(langEs["educationLaLagunaDetails"]);
+		$('#educationCesarManriqueTime').text(langEs["educationCesarManriqueTime"]);
+		$('#educationCesarManriqueRol').text(langEs["educationCesarManriqueRol"]);
+		$('#educationCesarManriqueCompany').text(langEs["educationCesarManriqueCompany"]);
+		$('#educationCesarManriqueDetails').html(langEs["educationCesarManriqueDetails"]);
+
+
 		$('#location').text(langEs["location"]);
 		$('#email').text(langEs["email"]);
 		$('#linkedin').text(langEs["linkedin"]);
@@ -453,7 +493,6 @@
 		$('#languages').text(langEs["languages"]);
 		$('#english').text(langEs["english"]);
 		$('#spanish').text(langEs["spanish"]);
-		$('#coverLetterTitle').text(langEs["coverLetterTitle"]);
 		$('#otherKnowledge').text(langEs["otherKnowledge"]);
 		$('#repositoryDevelopment').text(langEs["repositoryDevelopment"]);
 		$('#testMethods').text(langEs["testMethods"]);
@@ -480,8 +519,33 @@
 		$('#certifications').text(langEn["certifications"]);
 		$('#portfolio').text(langEn["portfolio"]);
     $('#rol').text(langEn["rol"]);
-		$('#resume1').text(langEn["resume1"]);
-		$('#resume2').text(langEn["resume2"]);
+		$('#resume').html(langEn["resume"]);
+		$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+		$('#coverLetter').html(langEn["coverLetter"]);
+		$('#printLetter').text(langEn["printLetter"]);
+		$('#atosTime').text(langEn["atosTime"]);
+		$('#atosRol').text(langEn["atosRol"]);
+		$('#atosTasks').html(langEn["atosTasks"]);
+		$('#integraTime').text(langEn["integraTime"]);
+		$('#integraRol').text(langEn["integraRol"]);
+		$('#integraTasks').html(langEn["integraTasks"]);
+		$('#laLagunaTime').text(langEn["laLagunaTime"]);
+		$('#laLagunaRol').text(langEn["laLagunaRol"]);
+		$('#laLagunaCompany').text(langEs["laLagunaCompany"]);
+		$('#laLagunaTasks').html(langEn["laLagunaTasks"]);
+		$('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
+		$('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
+		$('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
+		$('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
+		$('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
+		$('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
+		$('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
+		$('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
+		$('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
+		$('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
+		$('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
+		$('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
+
 		$('#location').text(langEn["location"]);
 		$('#email').text(langEn["email"]);
 		$('#linkedin').text(langEn["linkedin"]);
@@ -491,7 +555,6 @@
 		$('#languages').text(langEn["languages"]);
 		$('#english').text(langEn["english"]);
 		$('#spanish').text(langEn["spanish"]);
-		$('#coverLetterTitle').text(langEn["coverLetterTitle"]);
 		$('#otherKnowledge').text(langEn["otherKnowledge"]);
 		$('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
 		$('#testMethods').text(langEn["testMethods"]);
