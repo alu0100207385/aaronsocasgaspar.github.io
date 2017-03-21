@@ -9,8 +9,8 @@ langEn = {
   "certifications" : "CERTIFICATIONS",
   "portfolio" : "PORTFOLIO",
   "rol" : "Developer",
-  "resume" : "<p>My name is Aarón Socas Gaspar. Graduated in computer engineering in La Laguna University (Tenerife - Spain). I have focused my training in information technology, which contais knowegle related with web and smartphone developer, segurity and information processing.</p>"
-            +"<p>I consider myself as a hard worker person, active and dinamic. It is important for me, the target of the project, this is useful to effort more in my work. I want to go on learning and colaborate en interesting projects.</p>",
+  "resume" : "<p>My name is Aarón Socas Gaspar. I graduated in Computer Engineering from the University of La Laguna (Tenerife - Spain). I have focused my training in Information Technology, which has provided to me knowledge related with web and mobile development, security and data processing.</p>"
+            +"<p>I consider myself as a hard worker person, active and dinamic. Be aware of the goals of the project I working for is important for me, It is helpful for me to be focussed and work hard. I am interested in continue learning and growing, and be part of interesting projects.</p>",
   "location" : "S/C de Tenerife. Spain",
   "email" : "Email",
   "linkedin" : "See my Linkedin",
@@ -31,22 +31,22 @@ langEn = {
   "os" : "Linux and Windows",
   "coverLetterTitle" : "COVER LETTER",
   "coverLetter" : "<p>Dear Mr/Mrs:</p>"
-              +"<p>My name is Aarón Socas Gaspar, Graduated in computer engineering in La Laguna University (Tenerife - Spain). I decided to train me in technological field because it was always interesting for me as well as its applications and jobs.</p>"
+              +"<p>My name is Aarón Socas Gaspar, Graduated in computer engineering in University of La Laguna (Tenerife - Spain). I decided to train me in technological field because it was always interesting for me as well as its applications and jobs.</p>"
               +"<p>I am working currecly for Atos in I+D+i (investigation, development and innovation) department, studying and developing modules related with security and privacy.</p>"
-              +"<p>My profesional experience as developer have performed in INTEGRA Tecnología y Comunicación de Canarias Company. I also have  knowledge in system manage, I have a title job training in 2nd grade of Technical Higher Diploma in Systems and I was working in Chamber of Commerce in Santa Cruz de Tenerife as intern and La Laguna University. I have oriented my training towards web technology, cloud development, content manager and security.</p>"
+              +"<p>My profesional experience as developer have performed in INTEGRA Tecnología y Comunicación de Canarias Company. I also have  knowledge in system manage, I have a title job training in 2nd grade of Technical Higher Diploma in Systems and I was working in Chamber of Commerce in Santa Cruz de Tenerife as intern and University of La Laguna. I have oriented my training towards web technology, cloud development, content manager and security.</p>"
               +"<p>I am an active persion, curious, responsible, constant and perfectionist, with a great capacity of work and effort. I can adapt to different situations and changes and I can work in team or individually.</p>"
               +"<p>Kindest regards,</p>"
               +"<p>Aarón Socas Gaspar</p>",
   "printLetter" : "Print",
   "atosTime" : "2015/09/25 - Now",
-  "atosRol" : "Investigation, development and innovation (I+D+i)",
-  "atosTasks" : "<p>I am assigned in I+D+i department and currently I am working in project related with securuty and privacity. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
+  "atosRol" : "Researching, development and innovation (R&D+i)",
+  "atosTasks" : "<p>I am working for I+D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
   "integraTime" : "2015/02/23 - 2015/05/07",
   "integraRol" : "Web developer",
   "integraTasks" : "<p>I collaborated in different projects in the development department. Mainly I dedicated to the development of applications and web design. I used tools like Laravel, Joomla and got experience in Scrum methodology.</p>",
   "laLagunaTime" : "2013/10/01 - 2015/06/30",
-  "laLagunaRol" : "Systems technician / Sholar",
-  "laLagunaCompany": "La Laguna University",
+  "laLagunaRol" : "Systems technician / Intern",
+  "laLagunaCompany": "University of La Laguna",
   "laLagunaTasks" : "<p>Maintenance tasks: installation and configuration of software and OS, cloning, cleaning, security, scripts, etc. I worked with desktops and other multimedia devices.</p>",
   "chamberOfCommerceTime" : "2007/04 - 2007/06",
   "chamberOfCommerceRol" : "Systems technician / Practices",
