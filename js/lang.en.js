@@ -2,7 +2,7 @@ langEn = {
   "dropdownNav" : "Sections",
   "professionalExperienceNav" : "Professional experience",
   "educationNav" : "Education",
-  "certificationsNav" : "Certificaciones",
+  "certificationsNav" : "Certifications",
   "portfolioNav" : "Portfolio",
   "professionalExperience" : "PROFESSIONAL EXPERIENCE",
   "education" : "EDUCATION",
@@ -37,7 +37,7 @@ langEn = {
               +"<p>I am an active persion, curious, responsible, constant and perfectionist, with a great capacity of work and effort. I can adapt to different situations and changes and I can work in team or individually.</p>"
               +"<p>Kindest regards,</p>"
               +"<p>Aarón Socas Gaspar</p>",
-  "printLetter" : "Print",
+  "printLetter" : " Print",
   "atosTime" : "2015/09/25 - Now",
   "atosRol" : "Researching, development and innovation (R&D+i)",
   "atosTasks" : "<p>I am working for R&D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",

@@ -41,7 +41,7 @@ langEs = {
                   +"<p>Soy una persona activa, curiosa. responsable, constante y perfeccionista, con una gran capacidad de trabajo y esfuerzo. Soy capaz de adaptarme a las distintas situaciones y a los cambios, pudiendo trabajar de forma efectiva en equipo o individual.</p>"
                   +"<p>Un cordial saludo,</p>"
                   +"<p>Aarón Socas Gaspar</p>",
-  "printLetter" : "Imprimir",
+  "printLetter" : " Imprimir",
   "atosTime" : "25/09/2015 - Actualmente",
   "atosRol" : "Investigación, desarrollo e innovación(I+D+i)",
   "atosTasks" : "<p>Estoy asignado en el departamento de I+D+i, actualmente trabajando en proyectos relacionados con la seguridad, privacidad y criptografía. Estoy desarrollando una app Android para el proyecto <a href='http://abc4eu.com/'>ABC4EU</a>.</p>",
