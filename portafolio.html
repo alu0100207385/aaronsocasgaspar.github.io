@@ -6,9 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lang.en.js"></script>
+	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
 
 <body>
+	<!-- ######################## Nav topbar ############################ -->
+	<nav id="topBar" class="navbar navbar-default">
+	  <div class="container-fluid">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    	<ul class="nav navbar-nav">
+	      	<li class="dropdown"><a id="dropdownNav" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+		        <ul class="dropdown-menu">
+		          <li><a id="professionalExperienceNav" href="#professionalExperience"></a></li>
+		          <li><a id="educationNav" href="#education"></a></li>
+		          <li><a id="certificationsNav" href="#certifications"></a></li>
+		          <li><a id="portfolioNav" href="#portfolio"></a></li>
+		        </ul>
+	      	</li>
+	    	</ul>
+	    	<ul class="nav navbar-nav navbar-right">
+	      	<li id="linkEng" class="active"><a id="translateToEnglish" href="#">ENG<span class="sr-only"></span></a></li>
+	      	<li id="linkEsp"><a id="translateToSpanish" href="#">ESP</a></li>
+	    	</ul>
+	  	</div>
+	  </div>
+	</nav>
+
 	<div class="col-md-12">
 		<div id="cabecera">
 			<div class="col-md-6">

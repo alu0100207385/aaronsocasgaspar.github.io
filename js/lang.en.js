@@ -40,7 +40,7 @@ langEn = {
   "printLetter" : "Print",
   "atosTime" : "2015/09/25 - Now",
   "atosRol" : "Researching, development and innovation (R&D+i)",
-  "atosTasks" : "<p>I am working for I+D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
+  "atosTasks" : "<p>I am working for R&D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
   "integraTime" : "2015/02/23 - 2015/05/07",
   "integraRol" : "Web developer",
   "integraTasks" : "<p>I collaborated in different projects in the development department. Mainly I dedicated to the development of applications and web design. I used tools like Laravel, Joomla and got experience in Scrum methodology.</p>",
