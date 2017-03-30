@@ -1,5 +1,8 @@
 langEs = {
   "dropdownNav" : "Secciones",
+  "cv" : "CV",
+  "all" : "Todo",
+  "repository" : " Repositorio",
   "professionalExperienceNav" : "Experiencia profesional",
   "educationNav" : "Educación",
   "certificationsNav" : "Certificaciones",
@@ -41,7 +44,7 @@ langEs = {
                   +"<p>Soy una persona activa, curiosa. responsable, constante y perfeccionista, con una gran capacidad de trabajo y esfuerzo. Soy capaz de adaptarme a las distintas situaciones y a los cambios, pudiendo trabajar de forma efectiva en equipo o individual.</p>"
                   +"<p>Un cordial saludo,</p>"
                   +"<p>Aarón Socas Gaspar</p>",
-  "printLetter" : " Imprimir",
+  "printDocument" : "Imprimir",
   "atosTime" : "25/09/2015 - Actualmente",
   "atosRol" : "Investigación, desarrollo e innovación(I+D+i)",
   "atosTasks" : "<p>Estoy asignado en el departamento de I+D+i, actualmente trabajando en proyectos relacionados con la seguridad, privacidad y criptografía. Estoy desarrollando una app Android para el proyecto <a href='http://abc4eu.com/'>ABC4EU</a>.</p>",
@@ -99,6 +102,9 @@ $(document).ready(function() {
   $('#translateToSpanish').click(function(){
     //Nav top bar
     $('#dropdownNav').text(langEs["dropdownNav"]);
+    $('#cv').text(langEs["cv"]);
+    $('#all').text(langEs["all"]);
+    $('.repository').text(langEs["repository"]);
     $('#professionalExperienceNav').text(langEs["professionalExperienceNav"]);
     $('#educationNav').text(langEs["educationNav"]);
     $('#certificationsNav').text(langEs["certificationsNav"]);
@@ -119,9 +125,9 @@ $(document).ready(function() {
     $('#portfolio').text(langEs["portfolio"]);
     $('#rol').text(langEs["rol"]);
     $('#resume').html(langEs["resume"]);
-    $('#coverLetterTitle').text(langEs["coverLetterTitle"]);
+    $('.coverLetterTitle').text(langEs["coverLetterTitle"]);
     $('#coverLetter').html(langEs["coverLetter"]);
-    $('#printLetter').text(langEs["printLetter"]);
+    $('.printDocument').text(langEs["printDocument"]);
     $('#atosTime').text(langEs["atosTime"]);
     $('#atosRol').text(langEs["atosRol"]);
     $('#atosTasks').html(langEs["atosTasks"]);

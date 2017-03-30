@@ -1,5 +1,8 @@
 langEn = {
   "dropdownNav" : "Sections",
+  "cv" : "CV",
+  "all" : "All",
+  "repository" : " Repository",
   "professionalExperienceNav" : "Professional experience",
   "educationNav" : "Education",
   "certificationsNav" : "Certifications",
@@ -37,7 +40,7 @@ langEn = {
               +"<p>I am an active persion, curious, responsible, constant and perfectionist, with a great capacity of work and effort. I can adapt to different situations and changes and I can work in team or individually.</p>"
               +"<p>Kindest regards,</p>"
               +"<p>Aarón Socas Gaspar</p>",
-  "printLetter" : " Print",
+  "printDocument" : "Print",
   "atosTime" : "2015/09/25 - Now",
   "atosRol" : "Researching, development and innovation (R&D+i)",
   "atosTasks" : "<p>I am working for R&D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
@@ -100,6 +103,9 @@ $(document).ready(function() {
 function translateToEnglish(){
   //Top navbar
   $('#dropdownNav').text(langEn["dropdownNav"]);
+  $('#cv').text(langEn["cv"]);
+  $('#all').text(langEn["all"]);
+  $('.repository').text(langEn["repository"]);
   $('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
   $('#educationNav').text(langEn["educationNav"]);
   $('#certificationsNav').text(langEn["certificationsNav"]);
@@ -120,9 +126,9 @@ function translateToEnglish(){
   $('#portfolio').text(langEn["portfolio"]);
   $('#rol').text(langEn["rol"]);
   $('#resume').html(langEn["resume"]);
-  $('#coverLetterTitle').text(langEn["coverLetterTitle"]);
+  $('.coverLetterTitle').text(langEn["coverLetterTitle"]);
   $('#coverLetter').html(langEn["coverLetter"]);
-  $('#printLetter').text(langEn["printLetter"]);
+  $('.printDocument').text(langEn["printDocument"]);
   $('#atosTime').text(langEn["atosTime"]);
   $('#atosRol').text(langEn["atosRol"]);
   $('#atosTasks').html(langEn["atosTasks"]);
