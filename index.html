@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/print.js"></script>
+	<!--<script type="text/javascript" src="js/print.js"></script>-->
 	<script type="text/javascript" src="js/lang.en.js"></script>
 	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
@@ -86,7 +86,7 @@
 	    	<div id="cartaPresentacion" class="panel-collapse collapse justify" role="tabpanel" aria-labelledby="headingThree">
 	      		<div class="panel-body" id="presentacion">
 	      			<div id="coverLetter"></div>
-							<a class="print-link no-print fa fa-print btn btn-default printDocument"></a>
+							<a id="printCoverLetter" class="print-link no-print fa fa-print btn btn-default printDocument"></a>
 						</div>
 	      </div>
 	  </div>
@@ -440,15 +440,45 @@
 		$('#google-activate').click(function(){
 			$('#certificaciones-google-activate').toggle(500);
 		});
+
+		$('#printCoverLetter').click(function(){
+			if ($('#translateToEnglish').hasClass("active")){
+				printContent(langEn["coverLetterTitle"], langEn["coverLetter"]);
+			} else {
+				printContent(langEs["coverLetterTitle"], langEs["coverLetter"]);
+			}
+		});
 	});
 
+	//Print
+	function printContent(title, content)
+	{
+    var text = window.open('', 'PRINT', 'height=400,width=600');
+
+		text.window.location.href = "";
+    text.document.write('<html><head><title>' + document.title  + '</title>');
+    text.document.write('</head><body >');
+    text.document.write('<h1>' + title + '</h1>');
+    text.document.write(content);
+    text.document.write('</body></html>');
+
+    text.document.close(); 
+    text.focus(); 
+
+    text.print();
+    text.close();
+
+    return true;
+	}
+
+
 	//Print script
-	$('#otros-conocimientos0').html($('#otros-conocimientos').html());
+	/*$('#otros-conocimientos0').html($('#otros-conocimientos').html());
 	$(function() {
 		$('#presentacion').find('.print-link').on('click', function() {
 			$('#presentacion').print({
 		        prepend: "<h2 class='center'>Carta de presentacion</h2>",
-		        doctype: '<!doctype html>'
+		        doctype: 'text/plain'
 			});
 		});
 
@@ -462,7 +492,7 @@
 			$('#datos0').attr("hidden", true);
 			$('#skills0').attr("hidden", true);
 		});
-	});
+	});*/
 </script>
 </body>
 </html>
