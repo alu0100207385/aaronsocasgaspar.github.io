@@ -443,24 +443,28 @@
 		});
 
 		$('#printCoverLetter').click(function(){
-			if ($('#translateToEnglish').hasClass("active")){
-				printContent(langEn["coverLetterTitle"], langEn["coverLetter"]);
-			} else {
-				printContent(langEs["coverLetterTitle"], langEs["coverLetter"]);
-			}
+			printLetter();
 		});
+
+		$('#getCv').click(function(){
+			printCv();
+		});			
+		
 	});
 
 	//Print
-	function printContent(title, content)
+	function printLetter()
 	{
-    var text = window.open('', 'PRINT', 'height=400,width=600');
+		if ($('#linkEng').hasClass("active")){
+			base = langEn;
+		} else {
+			base = langEs;
+		}
+    var text = window.open('', 'PRINT', 'height=600,width=600');
 
-		text.window.location.href = "";
-    text.document.write('<html><head><title>' + document.title  + '</title>');
-    text.document.write('</head><body >');
-    text.document.write('<h1>' + title + '</h1>');
-    text.document.write(content);
+    text.document.write('<html><head></head><body >');
+    text.document.write('<h1>' + base["coverLetterTitle"] + '</h1>');
+    text.document.write(base["coverLetter"]);
     text.document.write('</body></html>');
 
     text.document.close(); 
@@ -471,6 +475,59 @@
 
     return true;
 	}
+
+	function printCv(){
+		if ($('#linkEng').hasClass("active")){
+			base = langEn;
+		} else {
+			base = langEs;
+		}
+		var text = window.open('', 'PRINT', 'height=1000,width=800');
+		text.document.write('<html><head><title>' + document.title  + '</title>');
+		text.document.write('</head><body >');
+		// Resume
+		text.document.write('<table>');
+		text.document.write('<tr>');
+		text.document.write('<th><h3>' + $('#rol').html() + '</h3></th>');
+		text.document.write('</tr>');
+
+		text.document.write('<tr>');
+		text.document.write('<td>' + $('#resume').html() + '</td>');
+		text.document.write("<td><img src='images/foto_peq2.png'></td>");
+		text.document.write('</tr>');
+
+		// Experience & Skills
+		text.document.write('<tr>');
+		text.document.write('<th><h3>' + base["professionalExperience"] + '</h3></th>');
+		text.document.write('</tr><tr>');
+		text.document.write('<th>');
+		text.document.write('<p>' + $('#atosTime').text() + '</p>');
+		text.document.write('</th>');
+		text.document.write('<th>');
+		text.document.write($('#atosRol').text());
+		text.document.write('ATOS');
+		text.document.write($('#atosTasks').text());
+		text.document.write('</th>');
+		text.document.write('</tr>');
+
+		// Education
+		// Certifications
+
+
+		text.document.write('</table>');
+		text.document.write('</body></html>');
+
+
+    text.document.close(); 
+    text.focus(); 
+
+    text.print();
+    text.close();
+
+		return true;
+	}
+
+	
 
 	//Print script
 	/*$('#otros-conocimientos0').html($('#otros-conocimientos').html());
