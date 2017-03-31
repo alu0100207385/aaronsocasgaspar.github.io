@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!--<script type="text/javascript" src="js/print.js"></script>-->
+	<script type="text/javascript" src="js/translate.js"></script>
 	<script type="text/javascript" src="js/lang.en.js"></script>
 	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
@@ -426,7 +427,7 @@
 
 <script type="text/javascript">
 	// Set default language
-	translateToEnglish();
+	translate(langEn);
 
 	$('#certificaciones-codeschool').hide();
 	$('#certificaciones-google-activate').hide();
@@ -470,7 +471,6 @@
 
     return true;
 	}
-
 
 	//Print script
 	/*$('#otros-conocimientos0').html($('#otros-conocimientos').html());
