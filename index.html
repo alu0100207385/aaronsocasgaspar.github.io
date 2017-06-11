@@ -430,7 +430,6 @@
 	});
 
 	//Print script
-	$('#otros-conocimientos0').html($('#otros-conocimientos').html());
 	$(function() {
 		$('#presentacion').find('.print-link').on('click', function() {
 			$('#presentacion').print({
@@ -439,7 +438,9 @@
 			});
 		});
 
+
 		$('#curriculum').find('button').on('click', function() {
+			$('#otros-conocimientos0').html($('#otros-conocimientos').html());
 			$('#datos0').removeAttr("hidden");
 			$('#skills0').removeAttr("hidden");
 			$('#curriculum').print({

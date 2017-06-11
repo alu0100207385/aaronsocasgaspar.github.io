@@ -36,7 +36,8 @@ langEn = {
               +"<p>My profesional experience as developer have performed in INTEGRA Tecnología y Comunicación de Canarias Company. I also have  knowledge in system manage, I have a title job training in 2nd grade of Technical Higher Diploma in Systems and I was working in Chamber of Commerce in Santa Cruz de Tenerife as intern and University of La Laguna. I have oriented my training towards web technology, cloud development, content manager and security.</p>"
               +"<p>I am an active persion, curious, responsible, constant and perfectionist, with a great capacity of work and effort. I can adapt to different situations and changes and I can work in team or individually.</p>"
               +"<p>Kindest regards,</p>"
-              +"<p>Aarón Socas Gaspar</p>",
+              +"<p>Aarón Socas Gaspar</p>"
+              +"<p>https://alu0100207385.github.io/</p>",
   "printLetter" : "Print",
   "atosTime" : "2015/09/25 - Now",
   "atosRol" : "Researching, development and innovation (R&D+i)",
