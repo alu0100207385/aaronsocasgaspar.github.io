@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="js/print.js"></script>-->
 	<script type="text/javascript" src="js/translate.js"></script>
 	<script type="text/javascript" src="js/lang.en.js"></script>
 	<script type="text/javascript" src="js/lang.es.js"></script>
@@ -36,10 +35,10 @@
     		<li>
     			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="printDocument"></span> <span class="caret"></span></a>
     			<ul class="dropdown-menu">
-            <li><a href="#" class="coverLetterTitle"></a></li>
-            <li><a href="#" id="cv"></a></li>
+            <li id="coverLetterTitle"><a href="#" class="coverLetterTitle"></a></li>
+            <li id="cvTitle"><a href="#" id="cv"></a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#" id="all"></a></li>
+            <li id="allTitle"><a href="#" id="all"></a></li>
           </ul>
     		</li>
         <li><a href="https://github.com/alu0100207385"><i class="fa fa-github" aria-hidden="true"></i><span class="repository"></span></a></li>
@@ -221,7 +220,7 @@
 			</div>
 
 			<div class="col-md-3"><br>
-				<img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angular-js-83ceb89bd5255391f25230727ae3f019.png" alt="Shaping up with Angular.js" />
+				<img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png" alt="Shaping up with Angular.js" />
 			</div>
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/392">Shaping up with Angular.js</a></h4>
@@ -280,7 +279,7 @@
 	</div>
 
 	<div id="cv" class="enlace-fin">
-		<button id="getCv" class="print-link no-print btn btn-primary btn-lg"></button>
+		<button id="getCv" class="btn btn-primary btn-lg"></button>
 	</div>
 </div>
 
@@ -442,13 +441,20 @@
 			$('#certificaciones-google-activate').toggle(500);
 		});
 
-		$('#printCoverLetter').click(function(){
+		$("#printCoverLetter,#coverLetterTitle").click(function(){
 			printLetter();
 		});
 
-		$('#getCv').click(function(){
+		$("#getCv,#cvTitle").click(function(e){
+			e.preventDefault();
 			printCv();
-		});			
+		});
+
+		$("#allTitle").click(function(e){
+			printLetter();
+			e.preventDefault();
+			printCv();
+		});	
 		
 	});
 
@@ -478,78 +484,13 @@
 
 	function printCv(){
 		if ($('#linkEng').hasClass("active")){
-			base = langEn;
+			window.location.href = "docs/AaronSocasGasparCvEn.pdf";
 		} else {
-			base = langEs;
+			window.location.href = "docs/AaronSocasGasparCvEs.pdf";
 		}
-		var text = window.open('', 'PRINT', 'height=1000,width=800');
-		text.document.write('<html><head><title>' + document.title  + '</title>');
-		text.document.write('</head><body >');
-		// Resume
-		text.document.write('<table>');
-		text.document.write('<tr>');
-		text.document.write('<th><h3>' + $('#rol').html() + '</h3></th>');
-		text.document.write('</tr>');
-
-		text.document.write('<tr>');
-		text.document.write('<td>' + $('#resume').html() + '</td>');
-		text.document.write("<td><img src='images/foto_peq2.png'></td>");
-		text.document.write('</tr>');
-
-		// Experience & Skills
-		text.document.write('<tr>');
-		text.document.write('<th><h3>' + base["professionalExperience"] + '</h3></th>');
-		text.document.write('</tr><tr>');
-		text.document.write('<th>');
-		text.document.write('<p>' + $('#atosTime').text() + '</p>');
-		text.document.write('</th>');
-		text.document.write('<th>');
-		text.document.write($('#atosRol').text());
-		text.document.write('ATOS');
-		text.document.write($('#atosTasks').text());
-		text.document.write('</th>');
-		text.document.write('</tr>');
-
-		// Education
-		// Certifications
-
-
-		text.document.write('</table>');
-		text.document.write('</body></html>');
-
-
-    text.document.close(); 
-    text.focus(); 
-
-    text.print();
-    text.close();
 
 		return true;
 	}
-
-	
-
-	//Print script
-	/*$('#otros-conocimientos0').html($('#otros-conocimientos').html());
-	$(function() {
-		$('#presentacion').find('.print-link').on('click', function() {
-			$('#presentacion').print({
-		        prepend: "<h2 class='center'>Carta de presentacion</h2>",
-		        doctype: 'text/plain'
-			});
-		});
-
-		$('#curriculum').find('button').on('click', function() {
-			$('#datos0').removeAttr("hidden");
-			$('#skills0').removeAttr("hidden");
-			$('#curriculum').print({
-		        prepend: "<h2 class='center'>Currículum</h2>",
-		        doctype: '<!doctype html>'
-			});
-			$('#datos0').attr("hidden", true);
-			$('#skills0').attr("hidden", true);
-		});
-	});*/
 </script>
 </body>
 </html>

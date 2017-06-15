@@ -12,10 +12,10 @@ langEs = {
   "certifications" : "CERTIFICACIONES",
   "portfolio" : "PORTAFOLIO",
   "rol" : "Desarrollador",
-  "resume": "<p>Mi nombre es Aarón Socas Gaspar. Graduado en Ingeniería"
-            +"Informática por la Universidad de La Laguna. He orientado mi"
-            +"formación en el uso de tecnologías de la información, la cual"
-            +"engloba conocimientos relacionados con programación web y"
+  "resume": "<p>Mi nombre es Aarón Socas Gaspar. Graduado en Ingeniería "
+            +"Informática por la Universidad de La Laguna. He orientado mi "
+            +"formación en el uso de tecnologías de la información, la cual "
+            +"engloba conocimientos relacionados con programación web y "
             +"dispositivos móviles, seguridad y tratamiento de la información.</p>"
             +"<p>Me considero una persona trabajadora, activa y dinámica. Doy importancia al objetivo del proyecto y esto me hace esforzarme más en mi trabajo. Quiero seguir aprendiendo y colaborar en proyectos interesantes.</p>",
   "location": "S/C de Tenerife. España",
@@ -43,7 +43,8 @@ langEs = {
                   +"<p>Mi experiencia profesional como desarrollador la he realizado en la empresa INTEGRA Tecnología y Comunicación de Canarias, SL. También poseo conocimientos en administración de sistemas, tengo el título de formación profesional 2º grado de Diplomado Técnico Superior en Sistemas y estuve como becario en la Cámara de Comercio de Santa Cruz de Tenerife y en la Universidad de La Laguna. He orientado mi formación hacia la tecnología web, desarrollo en la nube, gestión de contenidos y seguridad.</p>"
                   +"<p>Soy una persona activa, curiosa. responsable, constante y perfeccionista, con una gran capacidad de trabajo y esfuerzo. Soy capaz de adaptarme a las distintas situaciones y a los cambios, pudiendo trabajar de forma efectiva en equipo o individual.</p>"
                   +"<p>Un cordial saludo,</p>"
-                  +"<p>Aarón Socas Gaspar</p>",
+                  +"<p>Aarón Socas Gaspar</p>"
+                  +"<p>https://alu0100207385.github.io/</p>",
   "printDocument" : "Imprimir",
   "atosTime" : "25/09/2015 - Actualmente",
   "atosRol" : "Investigación, desarrollo e innovación(I+D+i)",
@@ -79,7 +80,7 @@ langEs = {
   "iterCourse" : "Centro de Excelencia de Desarrollo e Innovación (CEDEeI)",
   "iterCompany" : "Instituto Tecnológico y de Energías Renovables",
   "iterDetails" : "En la actualidad, el ITER es un centro de investigación de referencia internacional en energías renovables, ingeniería, telecomunicaciones y medio ambiente. Aquí aprendí distintas tecnologías, Java y Android entre otras.",
-  "codeSchoolDetails" : "Code School es un portal online dirigido a desarrollaodres que enseña a través de contenidos de entretenimiento. Con más de 50 cursos (Ruby, JavaScript, HTML/CSS, iOS, Git, bases de datos, etc.) Code School junta experimentados instructores con un contenido atractivo y de alta calidad inspirado para su comunidad. Más de 1 millón de personas en todo el mundo visita Code School para mejorar sus habilidades de desarrollo y aprender sobre la marcha.",
+  "codeSchoolDetails" : "Code School es un portal online dirigido a desarrolladores que enseña a través de contenidos de entretenimiento. Con más de 50 cursos (Ruby, JavaScript, HTML/CSS, iOS, Git, bases de datos, etc.) Code School junta experimentados instructores con un contenido atractivo y de alta calidad inspirado para su comunidad. Más de 1 millón de personas en todo el mundo visita Code School para mejorar sus habilidades de desarrollo y aprender sobre la marcha.",
   "rubyCourseDetails" : "Elementos de bloques de construcción básicos en Ruby.",
   "angularCourseDetails" : "Angular permite que su aplicación tenga una biblioteca de HTML ampliado. Aprender a sumar a su comportamiento HTML y acelerar la capacidad de respuesta de la aplicación.",
   "javascriptCourse1Details" : "Una introducción a los conceptos básicos del lenguaje JavaScript. Construir una base de la sintaxis de JavaScript y aprender a utilizar los valores, variables y archivos.",
