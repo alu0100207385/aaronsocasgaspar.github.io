@@ -74,6 +74,9 @@ function translate(elem){
   $('#googleActivateCloudCourse').text(elem["googleActivateCloudCourse"]);
   $('#googleActivateCloudEmisor').text(elem["googleActivateCloudEmisor"]);
   $('#googleActivateCloudDetails').text(elem["googleActivateCloudDetails"]);
+  $('#googleActivateECommerceCourse').text(elem["googleActivateECommerceCourse"]);
+  $('#googleActivateECommerceEmisor').text(elem["googleActivateECommerceEmisor"]);
+  $('#googleActivateECommerceDetails').text(elem["googleActivateECommerceDetails"]);
   $('#iterCourse').text(elem["iterCourse"]);
   $('#iterCompany').text(elem["iterCompany"]);
   $('#iterDetails').text(elem["iterDetails"]);
