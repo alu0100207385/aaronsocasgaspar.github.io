@@ -1,8 +1,11 @@
 langEn = {
   "dropdownNav" : "Sections",
+  "cv" : "CV",
+  "all" : "All",
+  "repository" : " Repository",
   "professionalExperienceNav" : "Professional experience",
   "educationNav" : "Education",
-  "certificationsNav" : "Certificaciones",
+  "certificationsNav" : "Certifications",
   "portfolioNav" : "Portfolio",
   "professionalExperience" : "PROFESSIONAL EXPERIENCE",
   "education" : "EDUCATION",
@@ -10,7 +13,7 @@ langEn = {
   "portfolio" : "PORTFOLIO",
   "rol" : "Developer",
   "resume" : "<p>My name is Aarón Socas Gaspar. I graduated in Computer Engineering from the University of La Laguna (Tenerife - Spain). I have focused my training in Information Technology, which has provided to me knowledge related with web and mobile development, security and data processing.</p>"
-            +"<p>I consider myself as a hard worker person, active and dinamic. Be aware of the goals of the project I working for is important for me, It is helpful for me to be focussed and work hard. I am interested in continue learning and growing, and be part of interesting projects.</p>",
+            +"<p>I consider myself as a hard worker person, active and dynamic. Be aware of the goals of the project I working for is important for me, It is helpful for me to be focussed and work hard. I am interested in continue learning and growing, and be part of interesting projects.</p>",
   "location" : "S/C de Tenerife. Spain",
   "email" : "Email",
   "linkedin" : "See my Linkedin",
@@ -38,10 +41,10 @@ langEn = {
               +"<p>Kindest regards,</p>"
               +"<p>Aarón Socas Gaspar</p>"
               +"<p>https://alu0100207385.github.io/</p>",
-  "printLetter" : "Print",
+  "printDocument" : "Print",
   "atosTime" : "2015/09/25 - Now",
   "atosRol" : "Researching, development and innovation (R&D+i)",
-  "atosTasks" : "<p>I am working for I+D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
+  "atosTasks" : "<p>I am working for R&D+i department and currently I am working in project related with security and privacy. I am developing an Android app for <a href='http://abc4eu.com/'>ABC4EU</a> project.</p>",
   "integraTime" : "2015/02/23 - 2015/05/07",
   "integraRol" : "Web developer",
   "integraTasks" : "<p>I collaborated in different projects in the development department. Mainly I dedicated to the development of applications and web design. I used tools like Laravel, Joomla and got experience in Scrum methodology.</p>",
@@ -70,6 +73,9 @@ langEn = {
   "googleActivateCloudCourse" : "Cloud Computing course",
   "googleActivateCloudEmisor" : "School of Industrial Organization",
   "googleActivateCloudDetails" : "Possibilities offered by the Cloud world to business. How to innovate to adapt to new technologies. Access to information from any device and securely.",
+  "googleActivateECommerceCourse": "E-Commerce course",
+  "googleActivateECommerceEmisor": "School of Industrial Organization",
+  "googleActivateECommerceDetails": "Introduction and tools to know how to buy and sell products and services in the net.",
   "iterCourse" : "Center for Excellence in Development and Innovation (CEDEeI)",
   "iterCompany" : "Technological and Renewable Energy Institute",
   "iterDetails" : "At present, ITER is an international research center of reference in renewable energy, engineering, telecommunications and the environment. Here I learned different technologies, Java and Android among others.",
@@ -88,112 +94,10 @@ langEn = {
   "myEmail" : "socasgaspar@gmail.com",
   "myLinkedin" : "https://www.linkedin.com/in/aaronsocasgaspar/",
   "myGithub" : "https://github.com/alu0100207385",
-  "certificationsDetailsPrint" : "Visit http://alu0100207385.github.io/ for more details."
+  "certificationsDetailsPrint" : "Visit http://alu0100207385.github.io/ for more details.",
+  "porfolioAbc4euSummary" : "I collaborated with an EU project called <a href=\"http://abc4eu.com/\">ABC4EU</a>. "
+  + "My task was developing an app for border guard to control travellers, verify and check "
+  + "their electronic documents. App is not public but you can see "
+  + "it though video demonstration in the following "
+  + "<a href=\"https://www.youtube.com/channel/UCp4Cfh2A7q5EEa8yK7xQrJw\">link</a>."
 };
-
-
-$(document).ready(function() {
-  $('#translateToEnglish').click(function(){
-    translateToEnglish();
-  });
-});
-
-function translateToEnglish(){
-  //Top navbar
-  $('#dropdownNav').text(langEn["dropdownNav"]);
-  $('#professionalExperienceNav').text(langEn["professionalExperienceNav"]);
-  $('#educationNav').text(langEn["educationNav"]);
-  $('#certificationsNav').text(langEn["certificationsNav"]);
-  $('#portfolioNav').text(langEn["portfolioNav"]);
-  //For print
-  $('#locationPrint').text(langEn["location"]);
-  $('#emailPrint').text(langEn["myEmail"]);
-  $('#linkedinPrint').text(langEn["myLinkedin"]);
-  $('#githubPrint').text(langEn["myGithub"]);
-  $('#carPrint').text(langEn["car"]);
-  $('#languagesPrint').text(langEn["languages"]);
-  $('#certificationsPrint').text(langEn["certifications"]);
-  $('#certificationsDetailsPrint').text(langEn["certificationsDetailsPrint"]);
-
-  $('#professionalExperience').text(langEn["professionalExperience"]);
-  $('#education').text(langEn["education"]);
-  $('#certifications').text(langEn["certifications"]);
-  $('#portfolio').text(langEn["portfolio"]);
-  $('#rol').text(langEn["rol"]);
-  $('#resume').html(langEn["resume"]);
-  $('#coverLetterTitle').text(langEn["coverLetterTitle"]);
-  $('#coverLetter').html(langEn["coverLetter"]);
-  $('#printLetter').text(langEn["printLetter"]);
-  $('#atosTime').text(langEn["atosTime"]);
-  $('#atosRol').text(langEn["atosRol"]);
-  $('#atosTasks').html(langEn["atosTasks"]);
-  $('#integraTime').text(langEn["integraTime"]);
-  $('#integraRol').text(langEn["integraRol"]);
-  $('#integraTasks').html(langEn["integraTasks"]);
-  $('#laLagunaTime').text(langEn["laLagunaTime"]);
-  $('#laLagunaRol').text(langEn["laLagunaRol"]);
-  $('#laLagunaCompany').text(langEn["laLagunaCompany"]);
-  $('#laLagunaTasks').html(langEn["laLagunaTasks"]);
-  $('#chamberOfCommerceTime').text(langEn["chamberOfCommerceTime"]);
-  $('#chamberOfCommerceRol').text(langEn["chamberOfCommerceRol"]);
-  $('#chamberOfCommerceCompany').text(langEn["chamberOfCommerceCompany"]);
-  $('#chamberOfCommerceTasks').html(langEn["chamberOfCommerceTasks"]);
-  $('#educationLaLagunaTime').text(langEn["educationLaLagunaTime"]);
-  $('#educationLaLagunaCareer').text(langEn["educationLaLagunaCareer"]);
-  $('#educationLaLagunaCompany').text(langEn["laLagunaCompany"]);
-  $('#educationLaLagunaDetails').html(langEn["educationLaLagunaDetails"]);
-  $('#educationCesarManriqueTime').text(langEn["educationCesarManriqueTime"]);
-  $('#educationCesarManriqueRol').text(langEn["educationCesarManriqueRol"]);
-  $('#educationCesarManriqueCompany').text(langEn["educationCesarManriqueCompany"]);
-  $('#educationCesarManriqueDetails').html(langEn["educationCesarManriqueDetails"]);
-  $('#googleActivateDetails').text(langEn["googleActivateDetails"]);
-  $('#googleActivateMobileCourse').text(langEn["googleActivateMobileCourse"]);
-  $('#googleActivateMobileEmisor').text(langEn["googleActivateMobileEmisor"]);
-  $('#googleActivateMobileDetails').text(langEn["googleActivateMobileDetails"]);
-  $('#googleActivateWebCourse').text(langEn["googleActivateWebCourse"]);
-  $('#googleActivateWebEmisor').text(langEn["googleActivateWebEmisor"]);
-  $('#googleActivateWebDetails').text(langEn["googleActivateWebDetails"]);
-  $('#googleActivateCloudCourse').text(langEn["googleActivateCloudCourse"]);
-  $('#googleActivateCloudEmisor').text(langEn["googleActivateCloudEmisor"]);
-  $('#googleActivateCloudDetails').text(langEn["googleActivateCloudDetails"]);
-  $('#iterCourse').text(langEn["iterCourse"]);
-  $('#iterCompany').text(langEn["iterCompany"]);
-  $('#iterDetails').text(langEn["iterDetails"]);
-  $('#codeSchoolDetails').text(langEn["codeSchoolDetails"]);
-  $('#rubyCourseDetails').text(langEn["rubyCourseDetails"]);
-  $('#angularCourseDetails').text(langEn["angularCourseDetails"]);
-  $('#javascriptCourse1Details').text(langEn["javascriptCourse1Details"]);
-  $('#gitCourseDetails').text(langEn["gitCourseDetails"]);
-  $('#sqlCourseDetails').text(langEn["sqlCourseDetails"]);
-  $('#jqueryCourseDetails').text(langEn["jqueryCourseDetails"]);
-  $('#portfolioTime').text(langEn["portfolioTime"]);
-  $('#portfolioLastUpdate').text(langEn["portfolioLastUpdate"]);
-  $('#portfolioView').text(langEn["portfolioView"]);
-  $('#portfolioDetails').text(langEn["portfolioDetails"]);
-  $('#getCv').text(langEn["getCv"]);
-
-
-  $('#location').text(langEn["location"]);
-  $('#email').text(langEn["email"]);
-  $('#linkedin').text(langEn["linkedin"]);
-  $('#github').text(langEn["github"]);
-  $('#car').text(langEn["car"]);
-  $('#proffesionalSkills').text(langEn["proffesionalSkills"]);
-  $('#languages').text(langEn["languages"]);
-  $('#english').text(langEn["english"]);
-  $('#spanish').text(langEn["spanish"]);
-  $('#otherKnowledge').text(langEn["otherKnowledge"]);
-  $('#repositoryDevelopment').text(langEn["repositoryDevelopment"]);
-  $('#testMethods').text(langEn["testMethods"]);
-  $('#testTools').text(langEn["testTools"]);
-  $('#manageTools').text(langEn["manageTools"]);
-  $('#agileMthodology').text(langEn["agileMthodology"]);
-  $('#clouds').text(langEn["clouds"]);
-  $('#database').text(langEn["database"]);
-  $('#os').text(langEn["os"]);
-
-  // Change active class
-  $('#linkEng').addClass('active');
-  $('#linkEsp').removeClass('active');
-  }
-

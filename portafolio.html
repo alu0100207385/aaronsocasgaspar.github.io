@@ -6,113 +6,68 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
+	<script type="text/javascript" src="js/lang.en.js"></script>
+	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
 
 <body>
+
+	<!-- ######################## Nav topbar ############################ -->
+	<nav id="topBar" class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a id="cv" href="index.html"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/alu0100207385"><i class="fa fa-github" aria-hidden="true"></i><span class="repository"></span></a></li>
+					<li id="linkEng" class="active"><a id="translateToEnglish" href="#">ENG<span class="sr-only"></span></a></li>
+					<li id="linkEsp"><a id="translateToSpanish" href="#">ESP</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav> <!--End nav-->
+	
 	<div class="col-md-12">
+
 		<div id="cabecera">
-			<div class="col-md-6">
-				<h1>PORTAFOLIO</h1>
-				<h4>Aarón Socas Gaspar</h4>
+			<h1 id="portfolio"></h1>
+		</div>
+		
+		<!--ABC4EU-->
+		<div id="abc4eu">
+			<div class="row projectRow">
+				<div class="col-md-4">
+					<a href="http://abc4eu.com/">
+						<img id="abc4euLogo" class="projectLogo" src="http://abc4eu.com/wpress/wp-content/uploads/2015/06/ABC4EU-logo.png" />
+					</a>
+				</div>
+				<div class="col-md-8">
+					<p id="porfolioAbc4euSummary"></p>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<img src="images/foto_peq.png" alt="foto_perfil"/>
-			</div>
-  	</div>
+		</div> <!--End ABC4EU-->
 
-    <div id="otros">
-    	<h3>PROYECTOS</h3>
-			<ul>
-				<li><a href="http://chefmanagement.herokuapp.com/">ChefManagement </a>(Ruby - Sinatra)</li>
-        <li><a href="https://github.com/2M3com/MyWedding-Front">MyWedding App </a>(building)</li>
-			</ul>
-    </div>
-    <hr>
+	</div> <!--End div class="col-md-12"-->
 
-    <div id="formacion">
-    	<h3>FORMACIÓN</h3>
-    	<h4>Sistemas y tecnologías web</h4>
-     	<p>Las competencias y conocimientos adquiridos en esta asignatura son importantes en el diseño y desarrollo Web, uso de medios y librerías digitales, así como arquitecturas orientadas a servicios basados en contenidos multimedia, uso software social y colaborativo y comercio electrónico.</p>
-	  	<p>Lenguaje: Ruby (Sinatra)</p>
-      Apps:
-  		<ul>
-				<li><a href="http://socialmanager.herokuapp.com/" target="_blank">Proyecto Social Manager</a></li>
- 				<li><a href="http://alu0100207385.github.io/SYTW_p6/" target="_blank">App chat</a></li>
-		 		<li><a href="http://alu0100207385.github.io/SYTW_p5/" target="_blank">Acortador URLs + estadisticas</a></li>
-		 		<li><a href="http://alu0100207385.github.io/SYTW_p3/" target="_blank">Usando OAuth con omniauth</a></li>
-		 		<li><a href="http://alu0100207385.github.io/SYTW_p2/" target="_blank">App anterior usando OAuth</a></li>
-		 		<li><a href="http://alu0100207385.github.io/SYTW_p1/" target="_blank">App contar amigos más populares en Twitter con Sinatra</a></li>
-  		</ul>
-      <br/>
-
-			<h4>Tecnología de la información para las organizaciones</h4>
-      <p>Aprendimos a analizar, diseñar e implantar tecnologías de la información en las organizaciones, de forma que pudiéramos ser capaces de ofrecer alternativas de soluciones de software, analizar, diseñar y desarrollar software a pequeña escala. Y también desarrollar e implementar estrategias de gestión de la información y del conocimiento contribuyendo a la mejora y eficiencia de la organización y de sus objetivos.</p>
-
-      Programas utilizados:
-      <ul>
-				<li><a href="http://gephi.github.io/" target="_blank">Gephi</a>: para el analisis de las redes sociales en las organizaciones.</li>
-				<li><a href="https://pipes.yahoo.com/pipes/" target="_blank">Yahoo Pipes</a>: para utilizar RSS.</li>
-				<li><a href="http://www.wavemaker.com/" target="_blank">Wavemaker</a>: en un ejemplo de implementar servicios webs.</li>
-				<li><a href="http://www.processmaker.com/es" target="_blank">Processmaker</a>: utilizado para trabajar con el workflow de una empresa.</li>
-				<li><a href="http://www.nubola-saas.com/" target="_blank">SugarCRM</a>: usando aplicaciones en la nube para gestionar la información y clientes en una organización.</li>
-				<li><a href="http://www.pentaho.com/" target="_blank">Spoon</a>: manipulación y transformación de tipos de datos.</li>
-      </ul>
-      <br/>
-
-			<h4>Desarrollo de sistemas informáticos</h4>
-			<p>Aquí aprendí importancia de la organización y sus necesidades en el ámbito de las tecnologías de la información y las comunicaciones. Seleccionar, diseñar, desplegar, integrar, evaluar, construir, gestionar, explotar y mantener las tecnologías de hardware, software y redes, dentro de los parámetros de coste y calidad adecuados.</p>
-      Lenguaje:
-      <ul>
-      	<li>Ruby on Rails (Ruby)</li>
-      	<li>Django (Python)</li>
-      </ul>
-      <p>Desarrollamos una aplicación simulando una red social. <a href="https://github.com/DSI-ETSII-ULL/2014-CAN-Sistemas" target="_blank">Ver app</a>.</p>
-      <br/>
-
-			<h4>Seguridad de sistemas informáticos</h4>
-			<p>Conocer y comprender las aplicaciones y protocolos criptográficos más utilizados, sobre todo aquellos usados para gestionar una red informática de modo seguro y garantizar la seguridad de los sistemas informáticos.
-      	<br/>Lenguaje: c++
-      	<br/>Algoritmos implementados:
-    	</p>
-	    <ul>
-	    	<li><a href="https://github.com/alu0100207385/Seguridad_p7" target="_blank">Cifrado RSA</a></li>
-	      <li><a href="https://github.com/alu0100207385/Seguridad_p6" target="_blank">Demostración de conocimiento nulo de Fiat-Shamir</a></li>
-	      <li><a href="https://github.com/alu0100207385/Seguridad_p5" target="_blank">Intercambio de claves de DIFFIE-HELLMAN</a></li>
-				<li><a href="https://github.com/alu0100207385/Seguridad_p4" target="_blank">Algoritmo AES (Rijndael)</a></li>
-				<li><a href="https://github.com/alu0100207385/Seguridad_p3" target="_blank">Cifrado A5</a></li>
-				<li><a href="https://github.com/alu0100207385/Seguridad_p2" target="_blank">Cifrado RC4</a></li>
-				<li><a href="https://github.com/alu0100207385/Seguridad_p1" target="_blank">Vigenere</a></li>
-	    </ul>
-      <br/>
-
-      <h4>Lenguajes y paradigmas de la programación</h4>
-      <p>Es una base de programación y la distintas metodologías y paradigmas de la misma.
-			Aprendí a analizar, diseñar, construir y mantener aplicaciones de forma robusta, segura y eficiente, eligiendo el paradigma y los lenguajes de programación más adecuados así como los principios fundamentales y técnicas básicas de la programación paralela, concurrente, distribuida y de tiempo real.</p>
-      <br/>Lenguaje: Ruby
-      <br/>Programas implementados:
-			<ul>
-				<li><a href="https://github.com/alu0100207385/pract12" target="_blank">Uso de gemnasium y e implementacion de DSL</a></li>
-				<li><a href="https://github.com/alu0100207385/pract11" target="_blank">Anterior con funcionalidades extra</a></li>
-				<li><a href="https://github.com/alu0100207385/pract10" target="_blank">Operaciones con matrices racionales densas y dispersas</a></li>
-				<li><a href="https://github.com/alu0100207385/prct08" target="_blank">Operaciones con matrices racionales</a></li>
-				<li><a href="https://github.com/alu0100207385/prct07" target="_blank">Tests y operaciones con racionales</a></li>
-				<li><a href="https://github.com/alu0100207385/pract05" target="_blank">Operaciones con racionales</a></li>
-			</ul>
-
-    </div>
-    <div class="enlace-fin">
-		<h4><a href="index.html">Ver Curriculum</a></h4>
-	</div>
-
-
-<!--Pie de pagina-->
-  	<div class="panel-footer" style="text-align:center">
-   		<a href="http://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63/es" target="_blank"><img src="images/linkedin-icon.png" alt="Accede a mi linkedin" title="Accede a mi linkedin" style="width:48px;height:48px;border:0"></a>
-			<a href="https://github.com/alu0100207385" target="_blank"><img src="images/github_icon.png" alt="Mi repositorio" title="Ver mi repositorio" style="width:48px;height:48px;border:0"></a>
-	  	<a href="http://www.ull.es/view/centros/etsii/Inicio/es" target="_blank"><img src="images/ull_icon.png" alt="Centro de formación" title="ETSII" style="width:48px;height:48px;border:0"></a>
-  	</div>
-	</div>
-
+	<div class="clearfix"></div>
+	
+	<!--Pie de pagina-->
+	<footer>
+		<a href="http://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63/es" target="_blank"><img src="images/linkedin-icon.png" alt="Accede a mi linkedin" title="Accede a mi linkedin" style="width:48px;height:48px;border:0"></a>
+		<a href="https://github.com/alu0100207385" target="_blank"><img src="images/github_icon.png" alt="Mi repositorio" title="Ver mi repositorio" style="width:48px;height:48px;border:0"></a>
+		<a href="http://www.ull.es/view/centros/etsii/Inicio/es" target="_blank"><img src="images/ull_icon.png" alt="Centro de formación" title="ETSII" style="width:48px;height:48px;border:0"></a>
+	</footer>
+	
+	<!--Script functions-->
+	<script type="text/javascript">
+		// Set default language
+		translate(langEn);
+	</script>
+	
 </body>
 
 </html>

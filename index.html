@@ -2,14 +2,16 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+	<meta name="description" content="Online curriculum Aaron Socas Gaspar">
 	<title>CV Aarón Socas Gaspar</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/print.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
 	<script type="text/javascript" src="js/lang.en.js"></script>
 	<script type="text/javascript" src="js/lang.es.js"></script>
 </head>
@@ -21,9 +23,8 @@
   <div class="container-fluid">
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     	<ul class="nav navbar-nav">
-      	<li id="linkEng" class="active"><a id="translateToEnglish" href="#">ENG<span class="sr-only"></span></a></li>
-      	<li id="linkEsp"><a id="translateToSpanish" href="#">ESP</a></li>
-      	<li class="dropdown"><a id="dropdownNav" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+      	<li class="dropdown">
+      		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="dropdownNav"></span> <span class="caret"></span></a>
 	        <ul class="dropdown-menu">
 	          <li><a id="professionalExperienceNav" href="#professionalExperience"></a></li>
 	          <li><a id="educationNav" href="#education"></a></li>
@@ -32,12 +33,26 @@
 	        </ul>
       	</li>
     	</ul>
+    	<ul class="nav navbar-nav navbar-right">
+    		<li>
+    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="printDocument"></span> <span class="caret"></span></a>
+    			<ul class="dropdown-menu">
+            <li id="coverLetterTitle"><a href="#" class="coverLetterTitle"></a></li>
+            <li id="cvTitle"><a href="#" id="cv"></a></li>
+            <li role="separator" class="divider"></li>
+            <li id="allTitle"><a href="#" id="all"></a></li>
+          </ul>
+    		</li>
+        <li><a href="https://github.com/alu0100207385"><i class="fa fa-github" aria-hidden="true"></i><span class="repository"></span></a></li>
+      	<li id="linkEng" class="active"><a id="translateToEnglish" href="#">ENG<span class="sr-only"></span></a></li>
+      	<li id="linkEsp"><a id="translateToSpanish" href="#">ESP</a></li>
+    	</ul>
   	</div>
   </div>
 </nav>
 
 <div id="aptitud" class="col-md-8">
-	<h2>Aarón Socas Gaspar</h2>
+	<h1>Aarón Socas Gaspar</h1>
 	<div class="clearfix"></div>
 	<div class="col-md-12">
 		<div class="row-fluid" id="datos0" hidden>
@@ -66,14 +81,14 @@
 	    	<div class="panel-heading" role="tab" id="headingThree">
 	      		<h3 class="panel-title">
 	        		<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#cartaPresentacion" aria-expanded="false">
-	          			<i class="fa fa-envelope-o" style="color:inherit;"> <span id="coverLetterTitle"></span></i>
+	          			<i class="fa fa-envelope-o" style="color:inherit;"> <span class="coverLetterTitle"></span></i>
 	        		</a>
 	      		</h3>
 	    	</div>
 	    	<div id="cartaPresentacion" class="panel-collapse collapse justify" role="tabpanel" aria-labelledby="headingThree">
 	      		<div class="panel-body" id="presentacion">
 	      			<div id="coverLetter"></div>
-							<a id="printLetter" class="print-link no-print fa fa-print btn btn-default"></a>
+							<a id="printCoverLetter" class="print-link no-print fa fa-print btn btn-default printDocument"></a>
 						</div>
 	      </div>
 	  </div>
@@ -161,12 +176,24 @@
 			</div>
 
 			<div class="col-md-3"><br>
-				<img src="images/icon_comercio-electronico.png" alt="Cloud Computing course"/>
+				<img src="images/icon_cloud-computing.png" alt="Cloud Computing course"/>
 			</div>
 			<div class="col-md-9">
 				<h4><a id="googleActivateCloudCourse" href="docs/Certificado_curso_de_cloud_computing.pdf"></a></h4>
 				<strong id="googleActivateCloudEmisor"></strong>
 				<p id="googleActivateCloudDetails"></p>
+			</div>
+
+			<div class="col-md-3">
+				<br>
+				<img src="images/icon_comercio-electronico.png" alt="ECommerce course" />
+			</div>
+			<div class="col-md-9">
+				<h4>
+					<a id="googleActivateECommerceCourse" href="docs/Certificado_curso_comercio_electronico.pdf"></a>
+				</h4>
+				<strong id="googleActivateECommerceEmisor"></strong>
+				<p id="googleActivateECommerceDetails"></p>
 			</div>
 		</div>
 
@@ -207,7 +234,7 @@
 			</div>
 
 			<div class="col-md-3"><br>
-				<img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angular-js-83ceb89bd5255391f25230727ae3f019.png" alt="Shaping up with Angular.js" />
+				<img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png" alt="Shaping up with Angular.js" />
 			</div>
 			<div class="col-md-9">
 				<h4><a href="https://www.codeschool.com/users/2037255/badges/392">Shaping up with Angular.js</a></h4>
@@ -266,7 +293,7 @@
 	</div>
 
 	<div id="cv" class="enlace-fin">
-		<button id="getCv" class="print-link no-print btn btn-primary btn-lg"></button>
+		<button id="getCv" class="btn btn-primary btn-lg"></button>
 	</div>
 </div>
 
@@ -280,7 +307,7 @@
 
 		<div id="datos" class="no-print">
 			<p><i class="fa fa-map-marker"></i> <span id="location"></span></p>
-			<p><i class="fa fa-envelope-o"> <a id="email" href="mailto:socasgaspar@gmailcom"></a></i></p>
+			<p><i class="fa fa-envelope-o"> <a id="email" href="mailto:socasgaspar@gmail.com"></a></i></p>
 			<p><i class="fa fa-linkedin"> <a id="linkedin" href="https://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63" target="_blank"></a></i></p>
 			<p><i class="fa fa-github"> <a id="github" href="https://github.com/alu0100207385" target="_blank"></a></i></p>
 			<p><i class="fa fa-car"></i> <span id="car"></span></p>
@@ -406,51 +433,79 @@
 <!-- #################### FOOTER #################### -->
   	<footer id="footer" class="no-print">
    		<a href="http://es.linkedin.com/pub/aarón-socas-gaspar/a4/110/63/es" target="_blank"><img src="images/linkedin-icon.png" alt="Linkedin" title="Linkedin" style="width:48px;height:48px;border:0"></a>
-			<a href="https://github.com/alu0100207385" target="_blank"><img src="images/github_icon.png" alt="Github" title="Github" style="width:48px;height:48px;border:0"></a>
+		<a href="https://github.com/alu0100207385" target="_blank"><img src="images/github_icon.png" alt="Github" title="Github" style="width:48px;height:48px;border:0"></a>
 	  	<a href="http://www.ull.es/view/centros/etsii/Inicio/es" target="_blank"><img src="images/ull_icon.png" alt="ETSII" title="ETSII" style="width:48px;height:48px;border:0"></a>
   	</footer>
 
 
-<script type="text/javascript">
-	// Set default language
-	translateToEnglish();
+	<script type="text/javascript">
+		// Set default language
+		translate(langEn);
 
-	$('#certificaciones-codeschool').hide();
-	$('#certificaciones-google-activate').hide();
+		$('#certificaciones-codeschool').hide();
+		$('#certificaciones-google-activate').hide();
 
-	$(document).ready(function() {
+		$(document).ready(function() {
 
-		$('#actitud').height($('#aptitud').height());
-		$('#codeschool').click(function(){
-			$('#certificaciones-codeschool').toggle(500);
-		});
-		$('#google-activate').click(function(){
-			$('#certificaciones-google-activate').toggle(500);
-		});
-	});
-
-	//Print script
-	$(function() {
-		$('#presentacion').find('.print-link').on('click', function() {
-			$('#presentacion').print({
-		        prepend: "<h2 class='center'>Carta de presentacion</h2>",
-		        doctype: '<!doctype html>'
+			$('#actitud').height($('#aptitud').height());
+			$('#codeschool').click(function(){
+				$('#certificaciones-codeschool').toggle(500);
 			});
-		});
 
-
-		$('#curriculum').find('button').on('click', function() {
-			$('#otros-conocimientos0').html($('#otros-conocimientos').html());
-			$('#datos0').removeAttr("hidden");
-			$('#skills0').removeAttr("hidden");
-			$('#curriculum').print({
-		        prepend: "<h2 class='center'>Currículum</h2>",
-		        doctype: '<!doctype html>'
+			$('#google-activate').click(function(){
+				$('#certificaciones-google-activate').toggle(500);
 			});
-			$('#datos0').attr("hidden", true);
-			$('#skills0').attr("hidden", true);
+
+			$("#printCoverLetter,#coverLetterTitle").click(function(){
+				printLetter();
+			});
+
+			$("#getCv,#cvTitle").click(function(e){
+				e.preventDefault();
+				printCv();
+			});
+
+			$("#allTitle").click(function(e){
+				printLetter();
+				e.preventDefault();
+				printCv();
+			});	
+			
 		});
-	});
-</script>
+
+		//Print
+		function printLetter()
+		{
+			if ($('#linkEng').hasClass("active")){
+				base = langEn;
+			} else {
+				base = langEs;
+			}
+		var text = window.open('', 'PRINT', 'height=600,width=600');
+
+		text.document.write('<html><head></head><body >');
+		text.document.write('<h1>' + base["coverLetterTitle"] + '</h1>');
+		text.document.write(base["coverLetter"]);
+		text.document.write('</body></html>');
+
+		text.document.close(); 
+		text.focus(); 
+
+		text.print();
+		text.close();
+
+		return true;
+		}
+
+		function printCv(){
+			if ($('#linkEng').hasClass("active")){
+				window.location.href = "docs/AaronSocasGasparCvEn.pdf";
+			} else {
+				window.location.href = "docs/AaronSocasGasparCvEs.pdf";
+			}
+
+			return true;
+		}
+	</script>
 </body>
 </html>
