@@ -95,9 +95,8 @@ langEn = {
   "myLinkedin" : "https://www.linkedin.com/in/aaronsocasgaspar/",
   "myGithub" : "https://github.com/alu0100207385",
   "certificationsDetailsPrint" : "Visit http://alu0100207385.github.io/ for more details.",
-  "porfolioAbc4euSummary" : "I collaborated with an EU project called <a href=\"http://abc4eu.com/\">ABC4EU</a>. "
-  + "My task was developing an app for border guard to control travellers, verify and check "
-  + "their electronic documents. App is not public but you can see "
-  + "it though video demonstration in the following "
-  + "<a href=\"https://www.youtube.com/channel/UCp4Cfh2A7q5EEa8yK7xQrJw\">link</a>."
+  "porfolioAbc4euSummary" : "I collaborated with an EU project called ABC4EU. "
+  + "My task was developing an Android app for the border guards to control travellers, check "
+  + "their electronic documents and their status in the country. App is not public but you can see "
+  + "it though video demonstration."
 };

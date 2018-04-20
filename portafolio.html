@@ -31,7 +31,7 @@
 		</div>
 	</nav> <!--End nav-->
 	
-	<div class="col-md-12">
+	<div id="container" class="col-md-12">
 
 		<div id="cabecera">
 			<h1 id="portfolio"></h1>
@@ -46,7 +46,13 @@
 					</a>
 				</div>
 				<div class="col-md-8">
+					<h4>ABC4EU</h4>
 					<p id="porfolioAbc4euSummary"></p>
+					<div class="row col-md-12">
+						<span><a href="https://www.youtube.com/channel/UCp4Cfh2A7q5EEa8yK7xQrJw">Videos</a></span>
+						<span>-</span>
+						<span><a href="http://abc4eu.com/">Web</a></span>
+					</div>
 				</div>
 			</div>
 		</div> <!--End ABC4EU-->
@@ -64,6 +70,9 @@
 	
 	<!--Script functions-->
 	<script type="text/javascript">
+		// Set footer at the bottom page
+		var h = $( document ).height();
+		$("#container").height(h);
 		// Set default language
 		translate(langEn);
 	</script>
