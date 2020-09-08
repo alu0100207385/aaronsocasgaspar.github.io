@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2><a href="{{ site.github.owner_url }}">{{ site.title | default: site.repository_name }}</a></h2>
+        
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          {% if page.url == "/" or page.url == "/portafolio.html" %}
+            <li><a href="{{ site.portafolio }}">Ver <strong>Portafolio</strong></a></li>
+            <li><a href="{{ site.linkedin }}">Ver <strong>Linkedin</strong></a></li>
+          <li><a href="{{ site.curriculumEs }}">Ver <strong>Curriculum</strong></a></li>
+          {% else %}
+            <li><a href="{{ site.portfolio }}">See <strong>Portfolio</strong></a></li>
+            <li><a href="{{ site.linkedin }}">See <strong>Linkedin</strong></a></li>
+            <li><a href="{{ site.curriculumEn }}">See <strong>Curriculum</strong></a></li>
+          {% endif %}
+        </ul>
+        {% endif %}
+
+        {% case page.url %}
+          {% when "/portafolio.html" %}
+            <div>
+              <p class="view"><a href="{{ site.tempbuddy }}">TempBuddy</a></p>
+              <p class="view"><a href="{{ site.abc4eu }}">ABC4EU</a></p>
+              <p class="view"><a href="{{ site.otros }}">Otros proyectos</a></p>
+            </div>
+          {% when "/en/" or "/en/#developer" or "/en/#professional-experience" or "/en/#education" or "/en/#skills" %}
+            <div>
+              <p class="view"><a href="{{ site.developer }}">Developer</a></p>
+              <p class="view"><a href="{{ site.professionalExperience }}">Profesional experience</a></p>
+              <p class="view"><a href="{{ site.education }}">Education</a></p>
+              <p class="view"><a href="{{ site.skills }}">Skills</a></p>
+            </div>
+          {% when "/en/portfolio.html" %}
+            <div>
+              <p class="view"><a href="/en/portfolio.html#tempbuddy">TempBuddy</a></p>
+              <p class="view"><a href="/en/portfolio.html#abc4eu">ABC4EU</a></p>
+              <p class="view"><a href="{{ site.other-proyects }}">Other proyects</a></p>
+            </div>
+          {% else %}
+            <div>
+              <p class="view"><a href="{{ site.intro }}">Intro</a></p>
+              <p class="view"><a href="{{ site.experienciaProfesional }}">Experiencia profesional</a></p>
+              <p class="view"><a href="{{ site.educacion }}">Educacion</a></p>
+              <p class="view"><a href="{{ site.habilidades }}">Habilidades</a></p>
+            </div>
+        {% endcase %}
+      </header>
+
+      <section>
+
+      {{ content }}
+
+      </section>
+      
+      <footer>
+        {% if page.url == "/" or page.url == "/portafolio.html" %}
+          <p><a href="{{ site.eng_version }}">See English version</a></p>
+        {% else %}
+          <p><a href="/">Ver en español</a></p>
+        {% endif %}
+        <p><small>socasgaspar@gmail.com</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
