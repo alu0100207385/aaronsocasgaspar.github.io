@@ -1,0 +1,23 @@
+theme: jekyll-theme-minimal
+title: Aarón Socas Gaspar
+repository_name: https://github.com/alu0100207385
+logo: /res/images/avatar.png
+show_downloads: true
+intro: /#desarrollador
+experienciaProfesional: /#experiencia-profesional
+educacion: /#educacion
+habilidades: /#educacion
+linkedin: https://www.linkedin.com/in/aaronsocasgaspar/
+curriculumEs: /res/docs/AaronSocasGasparCvEs.pdf
+curriculumEn: /res/docs/AaronSocasGasparCvEn.pdf
+portafolio: ./portafolio.html
+tempbuddy: /portafolio.html#tempbuddy
+abc4eu: /portafolio.html#abc4eu
+otros: /portafolio.html#otros-proyectos
+eng_version: /en/index.html
+developer: /en/#developer
+professionalExperience: /en/#professional-experience
+education: /en/#education
+skills: /en/#skills
+portfolio: ./portfolio.html
+other-proyects: /en/portfolio.html#other-proyects
