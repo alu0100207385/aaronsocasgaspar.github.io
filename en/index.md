@@ -14,7 +14,7 @@ ___
 #### Software developer
 ##### Bullhorn
 ###### 01/10/2018 - Now
-TempBuddy was absorbed by Bullhorn. In addition to my tasks in TB, I also do development as a fullstack (php-react) and tasks as QA.
+TempBuddy was absorbed by Bullhorn and my role was updated to mobile manager, this is, Android and iOS. Currently, I manage the app releases align myself with the backend team for release to production. I have to add I also do software engineer tasks: backend development (PHP-react) and testing and infrastructure tasks. 
 
 #### Android developer
 ##### TempBuddy
@@ -24,7 +24,7 @@ Responsible for the development and maintenance of Android applications. Besides
 #### Android developer
 ##### ATOS
 ###### 25/09/2015 - 20/03/2018
-I am working for R&D+i department and currently I am working in project related with security and privacy. I am developing an Android app for ABC4EU project.
+I worked for R&D+i department in a project related with security and privacy. I was developing an Android app for ABC4EU project.
 I developed and led a small team for the implementation of a mobile application on Android for the project [ABC4EU](http://abc4eu.com/).
 
 #### Web developer
@@ -56,6 +56,6 @@ I got knowing to deploy and manage computer systems, network management, softwar
 
 ## Skills
 ___
-My favorites languages are Android and Ruby, but also I have worked with php, java and react. Currently, I'm studying angular and it seems very interesting. I also have experience with other software development tools like git, docker, jira, swagger, etc. And talking about languages, I have experience with the English language, too!
+My favorites languages are Android (Kotlin and Java) and Ruby, but also I have worked with PHP, Java, React and Swift. Currently, I want to improve my skills in the front side, so learn angular is my next challenge. I also have experience with other software development tools like Git, Docker, Jira, Swagger, etc. And talking about languages, I have experience with the English language, too!
 
 If I have time during the sprint, I use my time in the development and integration of tests to get a robust application. I usually focus on unit tests and user interfaces like instrumented tests (Android) or Selenium (web).

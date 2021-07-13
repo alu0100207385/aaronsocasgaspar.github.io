@@ -14,12 +14,12 @@ ___
 #### Programador de software
 ##### Bullhorn
 ###### 01/10/2018 - Actualmente
-TempBuddy fue absorbida por Bullhorn. Además de mis tareas en TB, también me dedico al desarrollo como fullstack (php-react) y tareas como QA.
+TempBuddy fue absorbida por Bullhorn y mi rol cambió a encargado de aplicaciones móviles, esto es, Android e iOS. Actualmente gestiono los lanzamientos a producción de las apps alineandome con el equipo de backend para salidas a producción. A esto hay que añadir tareas como ingeniero de software: desarrollo (PHP-react) y test en backend y tareas de infraestructura.
 
 #### Progarmador Android
 ##### TempBuddy
 ###### 01/04/2018 - 30/09/2019
-Encargado del desarrollo y mantenimiento de las aplicaciones Android. Además de esto, me encargaba de la publicación (a producción y canales de testing en Google Play Store) e integración con funcionalidades de firebase.
+Encargado del desarrollo y mantenimiento de las aplicaciones Android. Además de esto, me encargaba de la publicación (a producción y canales de testing en Google Play Store) e integración con funcionalidades de Firebase.
 
 #### Progarmador Android
 ##### ATOS
@@ -55,6 +55,6 @@ Adquirí conocimientos para implantar y administrar sistemas informáticos, gest
 
 ## Habilidades
 ___
-Mis lenguajes preferidos son Android y Ruby, aunque también he trabajado con php, java y react. Actualmente estoy estudiando angular y me parece muy interesante. También tengo experiencia con otras herramientas relacionadas con el desarrollo de software: git, docker, jira, swagger, etc. Hablando de lenguajes, ¡también me defiendo en inglés!
+Mis lenguajes preferidos son Android (Kotlin and Java) y Ruby, aunque también he trabajado con PHP, Java, React y Swift. Quiero mejorar mis habilidades en front, así que aprender Angular es mi próximo reto. También tengo experiencia con otras herramientas relacionadas con el desarrollo de software: Git, Docker, Jira, Swagger, etc. Hablando de lenguajes, ¡también me defiendo en inglés!
 
 Si el tiempo lo permite, dedico gran parte del desarrollo a la integración y desarrollo de tests con el fin de conseguir una aplicación robusta. Normalmente me centro en tests unitarios y de interfaz como instrumentales (Android) o Selenium (Web).

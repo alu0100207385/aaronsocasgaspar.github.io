@@ -4,7 +4,7 @@ ___
 Aqui podrás encontrar algunos de los trabajos que he realizado o en los que he colaborado.
 
 ## TempBuddy
-Mi tarea principal es desarrollar y mantener la [aplicación Android](https://play.google.com/store/apps/details?id=com.tempbuddy.tempbuddy) de TempBuddy y la de los clientes inversores. También participo en el desarrollo y mantenimiento del [portal web](https://eu.tempbuddy.com/) como fullstack y miembro de QA.
+Mi tarea principal es la gestión de la app de TempBuddy y clientes. Mira [aplicación Android](https://play.google.com/store/apps/details?id=com.tempbuddy.tempbuddy) o [TempBuddy iOS app](https://apps.apple.com/es/app/tempbuddy/id905008100) para más detalles. También participo en el desarrollo y mantenimiento del [portal web](https://eu.tempbuddy.com/) como fullstack y miembro de QA.
 
 <center>
 <img alt="TempBuddy logo" src="res/images/tb-logo.png" width="150"/>

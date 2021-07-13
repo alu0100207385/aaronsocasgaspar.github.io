@@ -4,7 +4,7 @@ ___
 Here you could find some of the projects where I have worked and collaborated.
 
 ## TempBuddy
-My main task is to develop  and maintain the [Android app](https://play.google.com/store/apps/details?id=com.tempbuddy.tempbuddy) of TempBuddy and the rest of investing clients. I also participate in the development and maintain of the [web portal](https://eu.tempbuddy.com/) as fullstack y QA member.
+My main task is management of TempBuddy and client apps. See [TempBuddy Android app](https://play.google.com/store/apps/details?id=com.tempbuddy.tempbuddy) or [TempBuddy iOS app](https://apps.apple.com/es/app/tempbuddy/id905008100) for details. I also participate in the development and maintain of the [web portal](https://eu.tempbuddy.com/) as fullstack y QA member.
 
 <center>
 <img alt="TempBuddy logo" src="../res/images/tb-logo.png" width="150"/>
