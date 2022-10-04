@@ -1,8 +1,10 @@
 ## Developer
-___
-I graduated in Computer Engineering from the University of La Laguna (Tenerife - Spain). I have focused my training in Information Technology, which has provided to me knowledge related with web and mobile development, security and data processing.
 
-I consider myself a hard worker person, active and dynamic. Be aware of the goals of the project I work for is important for me. It is helpful for me to be focused and work hard. I think the most important for a developer is learning because this business is continuously advancing and it is the best way to get the best results, be useful, and innovate. I love work as part of a team, learn and contribute, study, and negotiate alternatives.
+---
+
+I graduated in Computer Engineering from the University of La Laguna (Tenerife, Spain). I have focused my education on Information Technology, where I acquired knowledge and skills related to web and mobile devices development, security and data processing.
+
+I consider myself a hard working, active and dynamic person. Being goal oriented is how I work on projects. I am able to manage well the permanent changes in advancing IT business. I love work as part of a team, learn and contribute, study, and negotiate alternatives.
 
 <center>
 <img alt="I love it when a plan comes together!" src="https://media.giphy.com/media/l3vR6aasfs0Ae3qdG/giphy.gif" width="240" height="200"/>
@@ -10,52 +12,82 @@ I consider myself a hard worker person, active and dynamic. Be aware of the goal
 <br/>
 
 ## Professional experience
-___
+
+---
+
 #### Software developer
+
 ##### Bullhorn
+
 ###### 01/10/2018 - Now
-TempBuddy was absorbed by Bullhorn and my role was updated to mobile manager, this is, Android and iOS. Currently, I manage the app releases align myself with the backend team for release to production. I have to add I also do software engineer tasks: backend development (PHP-react) and testing and infrastructure tasks. 
+
+TempBuddy was bought merged by Bullhorn and my job was promoted to Senior Software Development, and I working mainly developing and managing mobile apps. I have to add I also do some fullstack development tasks (Rails, Symfony, and React Native), testing and infrastructure tasks when necessary.
 
 #### Android developer
+
 ##### TempBuddy
+
 ###### 01/04/2018 - 30/09/2019
-Responsible for the development and maintenance of Android applications. Besides this, my tasks were the publication (to production and testing channels in Google Play Store) and integration with firebase functionalities.
+
+Responsible for the development and maintenance of Android applications. Additionally, I managed the app distribution and integration with Firebase functionalities.
 
 #### Android developer
+
 ##### ATOS
+
 ###### 25/09/2015 - 20/03/2018
-I worked for R&D+i department in a project related with security and privacy. I was developing an Android app for ABC4EU project.
-I developed and led a small team for the implementation of a mobile application on Android for the project [ABC4EU](http://abc4eu.com/).
+
+I worked for R&D+i department in a project related to security and privacy. I developed an Android app for the ABC4EU project.
+I developed and led a small team for the implementation of its mobile application on Android for the [ABC4EU](http://abc4eu.com/) project.
 
 #### Web developer
+
 ##### INTEGRA Tecnología y Comunicación de Canarias, SL
+
 ###### 23/02/2015 - 07/05/2015
-I collaborated in different projects in the development department. Mainly I dedicated to the development of applications and web design. I used tools like Laravel, Joomla and got experience in Scrum methodology.
+
+I participated in different projects in the development department. Mainly, I contributed to the development of applications and web designs. I used frameworks like Laravel, Joomla and gained experience in the Scrum methodology.
 
 #### Systems technician
-##### University of La Laguna
-###### 01/10/2013 - 30/06/2015
-As intern, my maintenance tasks were focus on installation and configuration of software and OS, cloning, cleaning, security, scripts, etc. I worked with desktops and other multimedia devices.
 
-#### Systems technician / Practices
+##### University of La Laguna
+
+###### 01/10/2013 - 30/06/2015
+
+As an intern, my maintenance tasks were focused on installation and configuration of software and OS, cloning, cleaning, security, scripts, etc. on different work stations and devices.
+
+#### Systems technician / Internship
+
 ##### Chamber of Commerce of Santa Cruz de Tenerife
+
 ###### 04/2007 - 06/2007
-Installation, administration and configuration of equipment and development of improvements in the systems of the company. Management and maintenance of computer packages of general and specific purpose used in the company.
+
+Installation, administration and configuration of equipment and upgrading systems in the company. Management and maintenance of computer packages for general and specific purposes used in the company.
 
 ## Education
-___
-#### Graduated in Computer Engineering
+
+---
+
+#### Degree in Computer Engineering
+
 ##### University of La Laguna
+
 ###### 10/09/2012 - 22/09/2015
-Itinerary: Information Technologies: Web systems and technologies, IT and knowledge management of organizations, security and networks.
+
+Major field study: Information Technologies. Web systems and technologies, management of IT organizations, security and networks.
 
 #### Computer Systems Technician
+
 ##### IES Cesar Manrique
+
 ###### 09/2005 - 07/2007
-I got knowing to deploy and manage computer systems, network management, software installation and changes to improve system and application exploitation.
+
+I learned to deploy and manage computer systems, network management, software installation and changes to improve system and application.
 
 ## Skills
-___
-My favorites languages are Android (Kotlin and Java) and Ruby, but also I have worked with PHP, Java, React and Swift. Currently, I want to improve my skills in the front side, so learn angular is my next challenge. I also have experience with other software development tools like Git, Docker, Jira, Swagger, etc. And talking about languages, I have experience with the English language, too!
 
-If I have time during the sprint, I use my time in the development and integration of tests to get a robust application. I usually focus on unit tests and user interfaces like instrumented tests (Android) or Selenium (web).
+---
+
+I am highly skilled in Android (Kotlin and Java), and Ruby. I also have worked with PHP, React Native and Swift languages and other software development tools like Git, Docker, Jira, Swagger, GraphQL, among others.
+
+Apart from Spanish, I can communicate well in English.
