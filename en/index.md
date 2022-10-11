@@ -2,9 +2,9 @@
 
 ---
 
-I graduated in Computer Engineering from the University of La Laguna (Tenerife, Spain). I have focused my education on Information Technology, where I acquired knowledge and skills related to web and mobile devices development, security and data processing.
+I graduated in Computer Engineering from the University of La Laguna (Tenerife, Spain) and I have focused my education on Information Technology where I acquired knowledge and skills related to web and mobile devices development, security and data processing.
 
-I consider myself a hard working, active and dynamic person. Being goal oriented is how I work on projects. I am able to manage well the permanent changes in advancing IT business. I love work as part of a team, learn and contribute, study, and negotiate alternatives.
+I consider myself a hard working, active and dynamic person. Being goal oriented is how I work on projects. I am able to manage the permanent changes in advancing IT business well. I love working as part of a team, learning and contributing, studying, and negotiating alternatives.
 
 <center>
 <img alt="I love it when a plan comes together!" src="https://media.giphy.com/media/l3vR6aasfs0Ae3qdG/giphy.gif" width="240" height="200"/>
@@ -21,7 +21,7 @@ I consider myself a hard working, active and dynamic person. Being goal oriented
 
 ###### 01/10/2018 - Now
 
-TempBuddy was bought merged by Bullhorn and my job was promoted to Senior Software Development, and I working mainly developing and managing mobile apps. I have to add I also do some fullstack development tasks (Rails, Symfony, and React Native), testing and infrastructure tasks when necessary.
+TempBuddy was bought by Bullhorn and I was promoted to Senior Software Development, and I have been working mainly on developing and managing mobile apps. I have to add I also do some fullstack development tasks (Rails, Symfony, and React Native), testing and infrastructure tasks when necessary.
 
 #### Android developer
 
@@ -29,7 +29,7 @@ TempBuddy was bought merged by Bullhorn and my job was promoted to Senior Softwa
 
 ###### 01/04/2018 - 30/09/2019
 
-Responsible for the development and maintenance of Android applications. Additionally, I managed the app distribution and integration with Firebase functionalities.
+I was responsible for the development and maintenance of Android applications. Additionally, I managed the app distribution and integration with Firebase functionalities.
 
 #### Android developer
 
@@ -37,8 +37,7 @@ Responsible for the development and maintenance of Android applications. Additio
 
 ###### 25/09/2015 - 20/03/2018
 
-I worked for R&D+i department in a project related to security and privacy. I developed an Android app for the ABC4EU project.
-I developed and led a small team for the implementation of its mobile application on Android for the [ABC4EU](http://abc4eu.com/) project.
+I worked for R&D+i department in a project related to security and privacy. I developed an Android app for the ABC4EU project, and led a small team for the implementation of its mobile application on Android for the [ABC4EU](http://abc4eu.com/) project.
 
 #### Web developer
 
@@ -74,7 +73,7 @@ Installation, administration and configuration of equipment and upgrading system
 
 ###### 10/09/2012 - 22/09/2015
 
-Major field study: Information Technologies. Web systems and technologies, management of IT organizations, security and networks.
+Major field of study: Information Technologies. Web systems and technologies, management of IT organizations, security and networks.
 
 #### Computer Systems Technician
 
@@ -82,7 +81,7 @@ Major field study: Information Technologies. Web systems and technologies, manag
 
 ###### 09/2005 - 07/2007
 
-I learned to deploy and manage computer systems, network management, software installation and changes to improve system and application.
+I learned to deploy and manage computer systems, network management, software installation and updates to improve systems and applications.
 
 ## Skills
 
