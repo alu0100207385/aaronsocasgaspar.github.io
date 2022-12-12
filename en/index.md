@@ -2,7 +2,7 @@
 
 ---
 
-I graduated in Computer Engineering from the University of La Laguna (Tenerife, Spain) and I have focused my education on Information Technology where I acquired knowledge and skills related to web and mobile devices development, security and data processing.
+I graduated in Computer Engineering from the University of La Laguna (Tenerife, Spain) and I have focused my education on Information Technology where I acquired knowledge and skills related to web and mobile devices development, security and data processing. My main skills are mobile developing (Kotlin, Java, Swift y React Native).
 
 I consider myself a hard working, active and dynamic person. Being goal oriented is how I work on projects. I am able to manage the permanent changes in advancing IT business well. I love working as part of a team, learning and contributing, studying, and negotiating alternatives.
 
@@ -21,7 +21,7 @@ I consider myself a hard working, active and dynamic person. Being goal oriented
 
 ###### 01/10/2018 - Now
 
-TempBuddy was bought by Bullhorn and I was promoted to Senior Software Development, and I have been working mainly on developing and managing mobile apps. I have to add I also do some fullstack development tasks (Rails, Symfony, and React Native), testing and infrastructure tasks when necessary.
+TempBuddy was bought by Bullhorn and I was promoted to Senior Software Development, and I have been working mainly on developing, managing, maintaining and distributing mobile apps (Android & iOS) for different projects in the company.
 
 #### Android developer
 
@@ -29,7 +29,7 @@ TempBuddy was bought by Bullhorn and I was promoted to Senior Software Developme
 
 ###### 01/04/2018 - 30/09/2019
 
-I was responsible for the development and maintenance of Android applications. Additionally, I managed the app distribution and integration with Firebase functionalities.
+I was responsible for the development, maintenance and distribution of Android applications.
 
 #### Android developer
 
@@ -87,6 +87,6 @@ I learned to deploy and manage computer systems, network management, software in
 
 ---
 
-I am highly skilled in Android (Kotlin and Java), and Ruby. I also have worked with PHP, React Native and Swift languages and other software development tools like Git, Docker, Jira, Swagger, GraphQL, among others.
+I worked mainly in Android (Kotlin and Java) and I have experience in iOS/Swift and React Native. I also know about managing and distributing apps in Google Play and Apple Stores, and the Firebase platform. I also know other languages like Ruby and PHP. I used to use other software development tools like Git, Jira, Swagger, and GraphQL, among others.
 
 Apart from Spanish, I can communicate well in English.

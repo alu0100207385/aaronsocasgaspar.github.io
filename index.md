@@ -2,7 +2,7 @@
 
 ---
 
-Estoy Graduado en Ingeniería Informática por la Universidad de La Laguna. He centrado mi educación en la tecnología de la información, donde adquirí conocimientos relacionados con programación web y dispositivos móviles, seguridad y tratamiento de la información.
+Estoy Graduado en Ingeniería Informática por la Universidad de La Laguna. He centrado mi educación en la tecnología de la información, donde adquirí conocimientos relacionados con programación web y dispositivos móviles, seguridad y tratamiento de la información. Mis habilidades principales se centran el desarrollo de aplicaciones móviles (Kotlin, Java, Swift y React Native).
 
 Me considero una persona trabajadora, activa y dinámica. Doy importancia al objetivo del proyecto y esto me hace esforzarme más en mi trabajo. Me adapto con facilidad a los cambios continuos de esta industria. Me gusta mucho trabajar en equipo, aprender y aportar, estudiar y negociar alternativas.
 
@@ -21,7 +21,7 @@ Me considero una persona trabajadora, activa y dinámica. Doy importancia al obj
 
 ###### 01/10/2018 - Actualmente
 
-TempBuddy fue comprada por Bullhorn y fui promocionado a Senior Software Development y me encargo principalmente del desarrollo y gestión de apllicaciones móviles. A esto hay que añadir tareas de desarrollo en el backend (Rails, Symfony y React Native) y tests y tareas de infraestructura cuando es necesario.
+TempBuddy fue comprada por Bullhorn y fui promocionado a Senior Software Development y me encargo principalmente del desarrollo, gestión, mantenimiento y distribución de aplicaciones móviles (Android e iOS) para distintos proyectos de la compañía.
 
 #### Progarmador Android
 
@@ -29,7 +29,7 @@ TempBuddy fue comprada por Bullhorn y fui promocionado a Senior Software Develop
 
 ###### 01/04/2018 - 30/09/2019
 
-Encargado del desarrollo y mantenimiento de las aplicaciones Android. Además de esto, me encargaba de la publicación, distribución e integración con funcionalidades de Firebase.
+Encargado del desarrollo, mantenimiento y distribución de aplicaciones Android.
 
 #### Progarmador Android
 
@@ -87,6 +87,6 @@ Adquirí conocimientos para implantar y administrar sistemas informáticos, gest
 
 ---
 
-Tengo bastante experiencia en Android (Kotlin y Java), y Ruby. También he trabajado con los lenguajes PHP, React Native y Swift y otras herramientas de desarrollo de software como Git, Docker, Jira, Swagger, GraphQL, entre otras.
+Trabajo principalmente en Android (Kotlin y Java) y tengo algo de experiencia en iOS/Swift y React Native. Tengo conocimientos en la gestión y distribución de aplicaciones móviles en las tiendas de Google Play y Apple y la plataforma Firebase. También conozco otros lenguajes como Ruby y PHP. Estoy acostumbrado a usar otras herramientas de desarrollo y gestión de software como Git, Jira, Swagger, GraphQL, entre otras.
 
 Aparte de español, también puedo comunicarme bien en inglés.
